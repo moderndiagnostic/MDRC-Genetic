@@ -50,18 +50,20 @@ const ContactForm = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(true);
 
   const updateField = (field) => (e) =>
     setFormData({ ...formData, [field]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!acceptedTerms) return;
+
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: "", phone: "", city: "", test: "", message: "" });
-      setAcceptedTerms(false);
+      setAcceptedTerms(true);
     }, 3000);
   };
 
@@ -183,7 +185,6 @@ const ContactForm = () => {
                     type="checkbox"
                     checked={acceptedTerms}
                     onChange={(e) => setAcceptedTerms(e.target.checked)}
-                    required
                     className="mt-0.5 h-4 w-4 shrink-0 rounded border-gray-300 text-[#0ECE91] focus:ring-[#0ECE91]/40"
                   />
                   <span className="text-xs leading-relaxed text-gray-600">
@@ -196,6 +197,12 @@ const ContactForm = () => {
                     </Link>
                   </span>
                 </label>
+
+                {!acceptedTerms && (
+                  <p className="text-xs font-medium text-red-500">
+                    Please accept the Terms & Conditions to submit the form.
+                  </p>
+                )}
 
                 <button
                   type="submit"
