@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Phone, Mail, MapPin, ShieldCheck, Clock, Send, ChevronRight, ExternalLink } from "lucide-react";
 import { GiDna1 } from "react-icons/gi";
 import {
@@ -67,6 +67,9 @@ const FooterHeading = ({ children }) => (
 );
 
 const Footer = () => {
+  const location = useLocation();
+  const hideBookingSection = location.pathname === "/contact";
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -87,7 +90,7 @@ const Footer = () => {
     <>
     <footer className="w-full text-white">
 
-      {/* ================= BOOKING ================= */}
+      {!hideBookingSection && (
       <div className="relative overflow-hidden bg-gradient-to-br from-[#004E7A] via-[#005E91] to-[#0C759A] py-12 lg:py-20">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-20 right-0 h-80 w-80 rounded-full bg-[#0ECE91]/10 blur-3xl" />
@@ -207,6 +210,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      )}
 
       {/* ================= FOOTER ================= */}
       <div className="relative overflow-hidden bg-gradient-to-b from-[#003A5C] via-[#002F4A] to-[#001E32]">

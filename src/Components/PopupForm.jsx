@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   X,
   Send,
@@ -63,6 +64,13 @@ const PopupForm = ({ isOpen, onClose }) => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setAcceptedTerms(false);
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -98,6 +106,7 @@ const PopupForm = ({ isOpen, onClose }) => {
       setSubmitted(false);
       onClose();
       setFormData({ name: "", phone: "", city: "", test: "", message: "" });
+      setAcceptedTerms(false);
     }, 2500);
   };
 
@@ -240,18 +249,34 @@ const PopupForm = ({ isOpen, onClose }) => {
                     className={`${inputClass} resize-none`}
                   />
 
+                  <label className="flex cursor-pointer items-start gap-2.5">
+                    <input
+                      type="checkbox"
+                      checked={acceptedTerms}
+                      onChange={(e) => setAcceptedTerms(e.target.checked)}
+                      required
+                      className="mt-0.5 h-4 w-4 shrink-0 rounded border-gray-300 text-[#0ECE91] focus:ring-[#0ECE91]/40"
+                    />
+                    <span className="text-xs leading-relaxed text-gray-600">
+                      I agree to the{" "}
+                      <Link
+                        to="/about"
+                        className="font-medium text-[#005C96] underline transition hover:text-[#0ECE91]"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Terms & Conditions
+                      </Link>
+                    </span>
+                  </label>
+
                   <button
                     type="submit"
-                    className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98]"
+                    disabled={!acceptedTerms}
+                    className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
                   >
                     Submit Request
                     <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
                   </button>
-
-                  <p className="text-center text-xs text-gray-400">
-                    By submitting, you agree to be contacted by our counseling
-                    team.
-                  </p>
                 </form>
               </div>
             )}

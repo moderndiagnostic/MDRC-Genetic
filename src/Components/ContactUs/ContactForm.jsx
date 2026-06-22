@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Send,
   ShieldCheck,
@@ -49,6 +50,7 @@ const ContactForm = () => {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
 
   const updateField = (field) => (e) =>
     setFormData({ ...formData, [field]: e.target.value });
@@ -59,6 +61,7 @@ const ContactForm = () => {
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: "", phone: "", city: "", test: "", message: "" });
+      setAcceptedTerms(false);
     }, 3000);
   };
 
@@ -68,19 +71,20 @@ const ContactForm = () => {
       className="overflow-hidden rounded-2xl bg-white shadow-[0_12px_40px_rgba(0,92,150,0.12)] ring-1 ring-[#005C96]/10 lg:rounded-3xl"
     >
       <div className="flex flex-col lg:flex-row lg:items-stretch">
-        <div className="relative h-[200px] w-full shrink-0 overflow-hidden sm:h-[240px] lg:h-auto lg:w-[42%]">
+        {/* Image — full bleed, matches form height */}
+        <div className="relative h-[220px] w-full shrink-0 overflow-hidden sm:h-[260px] lg:h-auto lg:min-h-[520px] lg:w-[48%]">
           <img
             src={FORM_IMAGE}
             alt="Genetic counseling at MDRC"
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-cover object-[30%_center] lg:object-[25%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#003A5C]/80 via-[#005E91]/30 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-[#003A5C]/20" />
-          <div className="absolute bottom-4 left-4 right-4 text-white lg:bottom-6 lg:left-6">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-medium backdrop-blur-sm">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#003A5C]/75 via-[#005E91]/20 to-transparent lg:bg-gradient-to-r lg:from-[#003A5C]/30 lg:via-transparent lg:to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 z-10 text-white lg:bottom-6 lg:left-6 lg:max-w-[90%]">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur-sm">
               <GiDna1 className="text-[#0ECE91]" />
               Free Counseling
             </span>
-            <p className="mt-2 text-sm font-semibold sm:text-base">
+            <p className="mt-2 text-sm font-semibold leading-snug sm:text-base">
               Book your genetic test with expert guidance
             </p>
           </div>
@@ -174,9 +178,29 @@ const ContactForm = () => {
                   className={`${inputClass} resize-none`}
                 />
 
+                <label className="flex cursor-pointer items-start gap-2.5">
+                  <input
+                    type="checkbox"
+                    checked={acceptedTerms}
+                    onChange={(e) => setAcceptedTerms(e.target.checked)}
+                    required
+                    className="mt-0.5 h-4 w-4 shrink-0 rounded border-gray-300 text-[#0ECE91] focus:ring-[#0ECE91]/40"
+                  />
+                  <span className="text-xs leading-relaxed text-gray-600">
+                    I agree to the{" "}
+                    <Link
+                      to="/about"
+                      className="font-medium text-[#005C96] underline transition hover:text-[#0ECE91]"
+                    >
+                      Terms & Conditions
+                    </Link>
+                  </span>
+                </label>
+
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)]"
+                  disabled={!acceptedTerms}
+                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
                 >
                   Submit Request
                   <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
