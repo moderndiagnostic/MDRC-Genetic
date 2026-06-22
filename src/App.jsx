@@ -194,13 +194,11 @@ function App() {
         </Routes>
 
         <Footer />
+        <PopupForm isOpen={open} onClose={() => setOpen(false)} />
       </BrowserRouter>
 
       {/* ✅ Loader overlay */}
       {loading && <Loader />}
-
-      {/* Popup */}
-      <PopupForm isOpen={open} onClose={() => setOpen(false)} />
     </>
   );
 }
