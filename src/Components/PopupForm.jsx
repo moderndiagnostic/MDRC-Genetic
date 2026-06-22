@@ -1,6 +1,20 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import {
+  X,
+  Send,
+  ShieldCheck,
+  ChevronDown,
+  User,
+  Phone,
+  MapPin,
+  FlaskConical,
+} from "lucide-react";
+import { GiDna1 } from "react-icons/gi";
 
-const testOptions = [
+const POPUP_IMAGE =
+  "https://res.cloudinary.com/ddcx08e0s/image/upload/v1782111643/ChatGPT_Image_Jun_22_2026_12_24_57_PM_xtk8ps.png";
+
+const cityOptions = [
   "Gurgaon",
   "Delhi",
   "Noida",
@@ -18,30 +32,38 @@ const testOptions = [
   "Kolkata",
 ];
 
+const geneticTests = [
+  "Oncology Genomics",
+  "Infectious Disease Panel",
+  "Pharmacogenomics",
+  "Cytogenetics & FISH",
+  "Advanced Sequencing (WGS/WES)",
+  "Rare Diseases NGS Panel",
+  "Reproductive Health & Pregnancy",
+  "Whole Exome & Genome Sequencing",
+  "Modern DNA Panels",
+  "Tandem Mass Spectrometry (TMS)",
+  "Carrier Screening / NIPT",
+  "Karyotyping",
+  "Other / Not Sure",
+];
+
+const inputClass =
+  "w-full rounded-xl border border-gray-200 bg-gray-50/80 px-4 py-3 text-sm text-gray-800 outline-none transition placeholder:text-gray-400 focus:border-[#0ECE91] focus:bg-white focus:ring-2 focus:ring-[#0ECE91]/25";
+
+const selectClass = `${inputClass} appearance-none cursor-pointer`;
+
 const PopupForm = ({ isOpen, onClose }) => {
-
-useEffect(() => {
-  if (isOpen || open) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
-
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, [isOpen, open]);
-
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    city: "",
     test: "",
     message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
 
-  // Background scroll lock
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -54,126 +76,186 @@ useEffect(() => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+
+    if (isOpen) {
+      window.addEventListener("keydown", handleEscape);
+    }
+
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setSubmitted(true);
 
     setTimeout(() => {
       setSubmitted(false);
       onClose();
-    }, 2000);
-
-    setFormData({
-      name: "",
-      phone: "",
-      test: "",
-      message: "",
-    });
+      setFormData({ name: "", phone: "", city: "", test: "", message: "" });
+    }, 2500);
   };
+
+  const updateField = (field) => (e) =>
+    setFormData({ ...formData, [field]: e.target.value });
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#001E32]/70 px-3 py-4 backdrop-blur-sm sm:px-4 sm:py-6"
       onClick={onClose}
     >
       <div
-        className="bg-white w-full max-w-lg rounded-2xl p-6 relative shadow-2xl"
+        className="relative flex w-full max-w-[min(980px,96vw)] max-h-[92vh] flex-col overflow-hidden rounded-2xl bg-white shadow-[0_25px_80px_rgba(0,0,0,0.35)] md:max-h-[90vh] md:flex-row md:items-stretch sm:rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button */}
         <button
+          type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 text-3xl text-gray-700 hover:text-black"
+          aria-label="Close"
+          className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/95 text-gray-600 shadow-md transition hover:bg-white hover:text-gray-900 sm:right-4 sm:top-4"
         >
-          ×
+          <X className="h-5 w-5" />
         </button>
 
-        {/* Heading */}
-        <h2 className="text-3xl font-bold text-center text-black mb-3">
-          Book Your Genetic Test
-        </h2>
-
-        <p className="text-center text-gray-600 mb-6">
-          Enter your details below to schedule your test with a specialist.
-        </p>
-
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-4">
-
-          {/* Name + Phone */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-            <input
-              type="text"
-              placeholder="Your Name*"
-              value={formData.name}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-green-400"
-            />
-
-            <input
-              type="tel"
-              placeholder="Phone Number*"
-              value={formData.phone}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, phone: e.target.value })
-              }
-              className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-green-400"
-            />
-          </div>
-
-          {/* City */}
-          <select
-            value={formData.test}
-            required
-            onChange={(e) =>
-              setFormData({ ...formData, test: e.target.value })
-            }
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-green-400"
-          >
-            <option value="">Select Your City*</option>
-
-            {testOptions.map((city) => (
-              <option key={city} value={city}>
-                {city}
-              </option>
-            ))}
-          </select>
-
-          {/* Message */}
-          <textarea
-            placeholder="Message..."
-            value={formData.message}
-            required
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
-            rows={4}
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-green-400 resize-none"
+        {/* IMAGE — full bleed in card */}
+        <div className="relative w-full shrink-0 overflow-hidden md:w-[48%] md:min-h-0">
+          <img
+            src={POPUP_IMAGE}
+            alt="Genetic testing consultation"
+            className="block h-[200px] w-full object-cover object-center sm:h-[240px] md:absolute md:inset-0 md:h-full md:w-full"
           />
+        </div>
 
-          {/* Submit */}
-          <button
-            type="submit"
-            className="w-full rounded-lg bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3 text-lg font-semibold text-white hover:opacity-90 transition"
-          >
-            Submit
-          </button>
+        {/* FORM PANEL */}
+        <div className="relative flex min-h-0 min-w-0 flex-1 flex-col overflow-y-auto">
+            {submitted ? (
+              <div className="flex flex-1 flex-col items-center justify-center px-6 py-10 text-center sm:py-12">
+                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#0ECE91]/15">
+                  <ShieldCheck className="h-8 w-8 text-[#05AF79]" />
+                </div>
+                <h3 className="mb-2 text-xl font-bold text-gray-900">
+                  Request Submitted!
+                </h3>
+                <p className="max-w-xs text-sm text-gray-500">
+                  Thank you! Our genetic counseling team will contact you within
+                  24 hours.
+                </p>
+              </div>
+            ) : (
+              <div className="flex flex-1 flex-col px-5 py-5 sm:px-6 sm:py-6 md:px-7 md:py-7">
+                <div className="mb-4">
+                  <span className="mb-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#005E91]">
+                    <GiDna1 className="h-3.5 w-3.5 text-[#0ECE91]" />
+                    MDRC Genomics
+                  </span>
+                  <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">
+                    Book Your Genetic Test
+                  </h2>
+                  <p className="mt-1 text-sm text-gray-500">
+                    Fill in your details and we&apos;ll schedule your appointment.
+                  </p>
+                </div>
 
-          {/* Success Message */}
-          {submitted && (
-            <p className="text-center text-green-600 font-medium">
-              Form submitted successfully!
-            </p>
-          )}
-        </form>
+                <form onSubmit={handleSubmit} className="flex flex-1 flex-col space-y-3">
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <div className="relative">
+                      <User className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                      <input
+                        type="text"
+                        placeholder="Your Name*"
+                        value={formData.name}
+                        required
+                        onChange={updateField("name")}
+                        className={`${inputClass} pl-10`}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <Phone className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                      <input
+                        type="tel"
+                        placeholder="Phone Number*"
+                        value={formData.phone}
+                        required
+                        onChange={updateField("phone")}
+                        className={`${inputClass} pl-10`}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <MapPin className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                    <select
+                      value={formData.city}
+                      required
+                      onChange={updateField("city")}
+                      className={`${selectClass} pl-10 pr-10 text-gray-800 ${
+                        !formData.city ? "text-gray-400" : ""
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select Your City*
+                      </option>
+                      {cityOptions.map((city) => (
+                        <option key={city} value={city}>
+                          {city}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                  </div>
+
+                  <div className="relative">
+                    <FlaskConical className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                    <select
+                      value={formData.test}
+                      required
+                      onChange={updateField("test")}
+                      className={`${selectClass} pl-10 pr-10 text-gray-800 ${
+                        !formData.test ? "text-gray-400" : ""
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select Genetic Test*
+                      </option>
+                      {geneticTests.map((test) => (
+                        <option key={test} value={test}>
+                          {test}
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                  </div>
+
+                  <textarea
+                    placeholder="Message (optional)..."
+                    value={formData.message}
+                    onChange={updateField("message")}
+                    rows={3}
+                    className={`${inputClass} resize-none`}
+                  />
+
+                  <button
+                    type="submit"
+                    className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98]"
+                  >
+                    Submit Request
+                    <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  </button>
+
+                  <p className="text-center text-xs text-gray-400">
+                    By submitting, you agree to be contacted by our counseling
+                    team.
+                  </p>
+                </form>
+              </div>
+            )}
+          </div>
       </div>
     </div>
   );
