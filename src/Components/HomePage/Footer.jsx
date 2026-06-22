@@ -38,6 +38,8 @@ const quickLinks = [
   { label: "About", to: "/about" },
   { label: "Blog", to: "/blogs" },
   { label: "Contact Us", to: "/contact" },
+  { label: "Terms & Conditions", to: "/terms-and-conditions" },
+  { label: "Privacy Policy", to: "/privacy-policy" },
 ];
 
 const socialLinks = [

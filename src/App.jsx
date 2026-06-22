@@ -37,6 +37,8 @@ import STDUrethritisPanelFeverPanel from "./Components/Infectious Disease/STDUre
 import SwineFluFever from "./Components/Infectious Disease/Swine Flu (H1N1)/SwineFluFever";
 import MeningitisPanel from "./Components/Infectious Disease/Meningitis Panel/MeningitisPanel";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import TermsOfUse from "./Components/TermsOfUse";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
 import BlogSection from "./Components/BlogSection/BlogSection";
 import BlogDetail from "./Components/BlogSection/BlogDetail";
 import AmniocentesisFeverPanel from "./Components/Cytogenetic and FISH/Amniocentesis/AmniocentesisFeverPanel";
@@ -122,6 +124,8 @@ function App() {
           <Route path="/services/modern-dna-panels" element={<ModernDNAPanel />} />
           <Route path="/services/metabolomics-services" element={<MetabolomicsServices />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/terms-and-conditions" element={<TermsOfUse />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
           <Route path="/services/infertility-genetics" element={<InfetilityGenetics />} />
           <Route path="/services/carrier-screening" element={<CarrierScreening />} />

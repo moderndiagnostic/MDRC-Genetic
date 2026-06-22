@@ -261,7 +261,7 @@ const PopupForm = ({ isOpen, onClose }) => {
                     <span className="text-xs leading-relaxed text-gray-600">
                       I agree to the{" "}
                       <Link
-                        to="/about"
+                        to="/terms-and-conditions"
                         className="font-medium text-[#005C96] underline transition hover:text-[#0ECE91]"
                         onClick={(e) => e.stopPropagation()}
                       >
