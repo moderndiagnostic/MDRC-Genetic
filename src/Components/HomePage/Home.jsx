@@ -11,6 +11,7 @@ import Blog from "./Blog";
 import Repro from "./Repro";
 import FAQ from "./FAQ";
 import FoundationSection from "../FoundationSection";
+import MediaGallery from "./MediaGallery";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Home = () => (
@@ -97,54 +98,7 @@ const Home = () => (
 
     <FAQ />
 
-    {/* MEDIA SECTION */}
-    <section className="py-6 sm:py-8 md:py-10 bg-[#F0FBFF] px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto text-center mb-4 sm:mb-6">
-        <h2 className="text-[#005C96] font-bold text-xl sm:text-2xl md:text-[28px] lg:text-[32px]">
-          Media & Gallery
-        </h2>
-
-        <p className="text-[#424040] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium mt-1">
-          Showcasing Care, Compassion and Clinical Excellence
-        </p>
-      </div>
-
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
-        <div className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[300px] xl:h-[340px] rounded-xl overflow-hidden">
-          <img
-            src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827967/vite-project/ms4y2uifdn8lesorqe1t.svg"
-            className="w-full h-full object-cover"
-            alt=""
-          />
-        </div>
-
-        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5">
-          <div className="h-[120px] sm:h-[140px] md:h-[160px] lg:h-[145px] xl:h-[160px] overflow-hidden">
-            <img
-              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827889/vite-project/l9cbqqbsyvrcm38olewl.svg"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-          </div>
-
-          <div className="h-[120px] sm:h-[140px] md:h-[160px] lg:h-[145px] xl:h-[160px] overflow-hidden">
-            <img
-              src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827885/vite-project/cjhj8jn5xk3vxxfykq81.svg"
-              className="w-full h-full object-cover"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="h-[140px] sm:h-[160px] md:h-[180px] lg:h-[300px] xl:h-[340px] rounded-xl overflow-hidden">
-          <img
-            src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827883/vite-project/rkor9gmxcdp8kbu98ksl.svg"
-            className="w-full h-full object-cover"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
+    <MediaGallery />
   </>
 );
 
