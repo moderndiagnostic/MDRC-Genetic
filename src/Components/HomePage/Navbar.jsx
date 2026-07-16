@@ -263,7 +263,6 @@ const logo =
                       <div
                         className={`
                           absolute
-                          left-0
                           top-full
                           z-[60]
                           bg-white
@@ -277,8 +276,11 @@ const logo =
                           duration-200
                           ${
                             link.label === "Metabolomics Services"
-                              ? "w-96 max-h-[calc(100vh-9rem)] overflow-visible"
-                              : "w-72"
+                              ? "left-0 w-96 max-h-[calc(100vh-9rem)] overflow-visible"
+                              : link.label === "Genomic Services" ||
+                                link.label === "Contact Us"
+                              ? "right-0 w-72"
+                              : "left-0 w-72"
                           }
                         `}
                       >
@@ -297,9 +299,8 @@ const logo =
 
         {/* LEVEL 2 DROPDOWN */}
         <div
-          className="
+          className={`
             absolute
-            left-full
             top-0
             z-[70]
             w-80
@@ -317,7 +318,12 @@ const logo =
             z-50
             pointer-events-none
             group-hover/item:pointer-events-auto
-          "
+            ${
+              link.label === "Genomic Services"
+                ? "right-full"
+                : "left-full"
+            }
+          `}
         >
           {item.dropdown.map((sub, j) => (
             <Link
