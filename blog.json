@@ -17,10 +17,10 @@
       "type": "Insight"
     },
     {
-      "title": "Offers clarity through non-invasive prenatal",
-      "image": "/assets/bl2.svg",
+      "title": "Offers clarity through non-invasive prenatal testing",
+      "image": "/assets/blog-nipt-clarity.svg",
       "slug": "offers-clarity-through-non-invasive-prenatal",
-      "publishedAt": "2026-05-20",
+      "publishedAt": "2026-07-17",
       "category": "Prenatal",
       "type": "Guide"
     },
@@ -28,7 +28,7 @@
       "title": "Is It in Your Genes?",
       "image": "/assets/bl2.svg",
       "slug": "is-it-in-your-genes",
-      "publishedAt": "2026-04-08",
+      "publishedAt": "2026-07-17",
       "category": "Diagnostics",
       "type": "News"
     }
