@@ -1,0 +1,20 @@
+{
+  "blogs": [
+    {
+      "title": "Identifies the right drug and dosage",
+      "image": "/assets/bl1.svg",
+      "slug": "understanding-genomic-sequencing"
+    },
+    {
+      "title": "Uses Next-Generation Sequencing",
+      "image": "/assets/lab-technicians-talking-video-call-with-professional-chemist-doctor-explaning-vaccine-reactions 1.svg",
+      "slug": "role-of-pharmacogenomics"
+    },
+    {
+      "title": "Offers clarity through non-invasive prenata",
+      "image": "/assets/bl2.svg",
+      "slug": "advances-in-infectious-disease-testing"
+    }
+  
+  ]
+}
