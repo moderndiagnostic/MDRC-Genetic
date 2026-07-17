@@ -8,7 +8,11 @@ const SectionList = ({ title, items }) => (
     <ul className="mt-5 space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
       {items.map((item, i) => (
         <li key={i} className="flex items-start gap-3">
+<<<<<<< HEAD
           <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <span className="text-green-500 mt-1 text-lg shrink-0">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           <p>{item}</p>
         </li>
       ))}

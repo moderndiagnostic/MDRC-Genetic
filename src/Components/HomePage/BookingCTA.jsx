@@ -12,7 +12,11 @@ export default function BookingCTA() {
             Book Your Genetic Test
           </h2>
 
+<<<<<<< HEAD
           <p className="mx-auto mb-4 max-w-[620px] text-sm sm:text-base md:text-lg leading-relaxed text-white/90 sm:mb-5 md:mb-6">
+=======
+          <p className="mx-auto mb-4 max-w-[620px] text-sm leading-relaxed text-white/90 sm:mb-5 sm:text-[15px] md:mb-6 md:text-base">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
             Enter your information below to schedule your testing appointment.
             Our team will contact you to confirm the details.
           </p>

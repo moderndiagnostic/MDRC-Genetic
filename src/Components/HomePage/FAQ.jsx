@@ -41,7 +41,11 @@ const FAQ = () => {
       <div className="max-w-4xl w-full">
 
         {/* Heading */}
+<<<<<<< HEAD
         <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-gray-800 mb-4 sm:mb-5 md:mb-6 text-center">
+=======
+        <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-semibold text-gray-800 mb-4 sm:mb-5 md:mb-6 text-center">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           Frequently Asked Questions
         </h2>
 
@@ -57,7 +61,11 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex justify-between items-center p-3 sm:p-4 md:p-5 text-left cursor-pointer gap-3"
               >
+<<<<<<< HEAD
                 <span className="text-sm sm:text-base md:text-lg font-medium text-gray-700 text-left">
+=======
+                <span className="text-sm sm:text-[15px] md:text-[17px] font-medium text-gray-700 text-left">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                   {faq.question}
                 </span>
 
@@ -78,7 +86,11 @@ const FAQ = () => {
                 }`}
               >
                 <div className="overflow-hidden">
+<<<<<<< HEAD
                   <p className="px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+=======
+                  <p className="px-3 sm:px-4 md:px-5 pb-3 sm:pb-4 md:pb-5 text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                     {faq.answer}
                   </p>
                 </div>

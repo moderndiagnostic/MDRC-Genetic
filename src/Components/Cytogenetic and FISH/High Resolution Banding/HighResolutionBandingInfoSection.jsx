@@ -8,6 +8,7 @@ const HighResolutionBandingInfoSection = () => {
         
         {/* Section 1 */}
         <div className="mb-10">
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Key Diagnostic Evaluations
           </div>
@@ -16,6 +17,16 @@ const HighResolutionBandingInfoSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Key Diagnostic Evaluations
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Enhanced Chromosome Visualization</b> – Detects fine structural rearrangements, microdeletions, and duplications.
 
@@ -27,7 +38,11 @@ const HighResolutionBandingInfoSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Detailed Cytogenetic Analysis </b> – Evaluates chromosomal integrity for accurate diagnosis of genetic disorders.
 
@@ -38,7 +53,11 @@ const HighResolutionBandingInfoSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Developmental Disorder Assessment</b> – Supports identification of chromosomal causes in congenital and developmental abnormalities.
 
@@ -52,6 +71,7 @@ const HighResolutionBandingInfoSection = () => {
 
         {/* Section 2 */}
         <div>
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Clinical Applications
           </div>
@@ -60,6 +80,16 @@ const HighResolutionBandingInfoSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Clinical Applications
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Facilitates precise diagnosis of genetic and developmental disorders.
 
@@ -68,7 +98,11 @@ Facilitates precise diagnosis of genetic and developmental disorders.
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Detects subtle chromosomal changes not visible with standard karyotyping.
 
@@ -76,14 +110,22 @@ Detects subtle chromosomal changes not visible with standard karyotyping.
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Guides clinical management, genetic counseling, and recurrence risk assessment.
        </p>
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Supports informed decision-making in reproductive and pediatric care.
 </p>

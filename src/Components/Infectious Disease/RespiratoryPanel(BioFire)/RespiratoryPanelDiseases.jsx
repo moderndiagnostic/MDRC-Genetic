@@ -25,7 +25,11 @@ const RespiratoryPanelDiseases = () => {
 
           {/* Description */}
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6 mt-3">
+<<<<<<< HEAD
             MDRC offers advanced respiratory pathogen testing using a multiplex PCR platform. This technology enables simultaneous detection of multiple viral and bacterial agents, providing rapid, accurate diagnosis to guide timely clinical management.
+=======
+            MDRC offers advanced respiratory pathogen testing using the BioFire multiplex PCR platform. This technology enables simultaneous detection of multiple viral and bacterial agents, providing rapid, accurate diagnosis to guide timely clinical management.
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           </p>
 
         </div>

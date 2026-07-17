@@ -5,7 +5,11 @@ const Section = ({ title, children }) => (
     <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-900">
       {title}
     </h2>
+<<<<<<< HEAD
     <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
+=======
+    <div className="text-lg md:text-xl text-gray-700 leading-relaxed">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
       {children}
     </div>
   </div>

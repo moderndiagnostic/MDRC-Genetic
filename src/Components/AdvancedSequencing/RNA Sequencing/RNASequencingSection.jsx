@@ -10,6 +10,7 @@ const RNASequencingSection = () => {
         
         {/* Section 1 */}
         <div className="mb-10">
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
 Technical Scope
           </div>
@@ -18,6 +19,16 @@ Technical Scope
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+Technical Scope
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Analyte</b> –  Total RNA or mRNA
 
@@ -28,7 +39,11 @@ Technical Scope
          
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Applications</b> –  Gene expression profiling, fusion detection, splice variant analysis
 
@@ -38,7 +53,11 @@ Technical Scope
               </p>
             </li>
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Sequencing Depth</b> –  Application-dependent (typically 30–100 million reads)
 
@@ -47,7 +66,11 @@ Technical Scope
               </p>
             </li>
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Library Preparation</b> –  Poly-A selection or ribosomal RNA depletion
 
@@ -64,6 +87,7 @@ Technical Scope
 
 
         <div>
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Clinical Applications
           </div>
@@ -72,6 +96,16 @@ Technical Scope
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Clinical Applications
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Detection of oncogenic fusion transcripts (e.g., BCR-ABL1)
 
@@ -80,7 +114,11 @@ Detection of oncogenic fusion transcripts (e.g., BCR-ABL1)
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Functional validation of DNA variants
 
@@ -88,14 +126,22 @@ Functional validation of DNA variants
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Tumor classification and prognosis
        </p>
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Investigation of splicing defects in rare diseases
 </p>

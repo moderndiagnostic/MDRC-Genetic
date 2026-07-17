@@ -64,8 +64,13 @@ const BlogSection = () => {
   return (
     <section className="bg-white py-4 sm:py-5 md:py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+<<<<<<< HEAD
         <h2 className="text-xl sm:text-2xl md:text-[25px] text-black font-bold">Blog</h2>
         <p className="opacity-80 text-[#424040] text-sm sm:text-base md:text-lg mb-3 sm:mb-4 leading-relaxed">
+=======
+        <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] text-black font-bold">Blog</h2>
+        <p className="opacity-80 text-[#424040] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium mb-3 sm:mb-4">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           How Genomics Predicts Your Future Health
         </p>
 
@@ -94,7 +99,11 @@ const BlogSection = () => {
                       className="w-full h-40 sm:h-48 md:h-52 object-cover p-2 rounded-xl"
                     />
                     <div className="p-3 sm:p-4 flex-1 flex items-center">
+<<<<<<< HEAD
                       <p className="text-[#005C96] text-sm sm:text-base md:text-lg font-medium">
+=======
+                      <p className="text-[#005C96] text-sm sm:text-base md:text-lg lg:text-[20px] font-medium">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                         {blog.text}
                       </p>
                     </div>
@@ -139,4 +148,8 @@ const BlogSection = () => {
   );
 };
 
+<<<<<<< HEAD
 export default BlogSection;
+=======
+export default BlogSection;
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1

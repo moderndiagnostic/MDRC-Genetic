@@ -25,7 +25,11 @@ const GastrointestinalPanelDiseases = () => {
 
           {/* Description */}
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6 mt-3">
+<<<<<<< HEAD
             MDRC provides advanced gastrointestinal pathogen testing using a multiplex PCR platform. This enables simultaneous detection of viral, bacterial, and parasitic agents, facilitating rapid and accurate diagnosis of infectious diarrhea.
+=======
+            MDRC provides advanced gastrointestinal pathogen testing using the BioFire multiplex PCR platform. This enables simultaneous detection of viral, bacterial, and parasitic agents, facilitating rapid and accurate diagnosis of infectious diarrhea.
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           </p>
 
         </div>

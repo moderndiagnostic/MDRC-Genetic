@@ -8,6 +8,7 @@ const HighResolutionBandingInfoSection = () => {
         
         {/* Section 1 */}
         <div className="mb-10">
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Key Diagnostic Evaluations
           </div>
@@ -16,6 +17,16 @@ const HighResolutionBandingInfoSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Key Diagnostic Evaluations
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Genetic Sequencing</b> – Detects pathogenic variants affecting neuronal function and development.
 
@@ -29,7 +40,11 @@ const HighResolutionBandingInfoSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Targeted Neurogenetic Panels</b> – Focused analysis for epilepsy, neuropathies, and developmental disorders.
 
@@ -42,7 +57,11 @@ const HighResolutionBandingInfoSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Molecular Diagnosis</b> – Supports correlation with clinical features for accurate prognosis and treatment planning.
 
@@ -57,6 +76,7 @@ const HighResolutionBandingInfoSection = () => {
 
         {/* Section 2 */}
         <div>
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Clinical Applications
           </div>
@@ -65,6 +85,16 @@ const HighResolutionBandingInfoSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Clinical Applications
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Enables early and precise diagnosis of complex neurological disorders.
 
@@ -73,7 +103,11 @@ Enables early and precise diagnosis of complex neurological disorders.
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Guides targeted management and personalized therapy options.
 
@@ -81,14 +115,22 @@ Guides targeted management and personalized therapy options.
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Supports prognostic assessment and family counseling.
        </p>
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Facilitates informed decision-making for long-term care and intervention strategies.
 </p>

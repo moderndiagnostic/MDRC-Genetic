@@ -13,7 +13,11 @@ const LCMSSection = () => {
         <div className="space-y-6 text-base md:text-lg leading-7 md:leading-8">
           
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               1. Highly Accurate Biomarker Measurement
             </span>
             <br />
@@ -21,7 +25,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               2. Detection of Low-Concentration Analytes
             </span>
             <br />
@@ -29,7 +37,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               3. Superior Specificity Compared to Immunoassays
             </span>
             <br />
@@ -37,7 +49,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               4. Simultaneous Multi-Analyte Testing
             </span>
             <br />
@@ -58,7 +74,11 @@ const LCMSSection = () => {
         <div className="space-y-5 text-base md:text-lg leading-7 md:leading-8">
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Higher Specificity & Sensitivity
             </span>
             <br />
@@ -66,7 +86,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Reduced Matrix Interference
             </span>
             <br />
@@ -74,7 +98,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Multiplexing Capabilities
             </span>
             <br />
@@ -82,7 +110,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Reliability for Small Molecules
             </span>
             <br />
@@ -90,7 +122,11 @@ const LCMSSection = () => {
           </p>
 
           <p>
+<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
+=======
+            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Wide Dynamic Range
             </span>
             <br />

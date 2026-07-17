@@ -10,6 +10,7 @@ const RNASequencingforFusionSection = () => {
         
         {/* Section 1 */}
         <div className="mb-10">
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
 Technical Scope
           </div>
@@ -18,6 +19,16 @@ Technical Scope
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+Technical Scope
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Sample Type</b> –    FFPE tumor tissue or bone marrow
 
@@ -30,7 +41,11 @@ Technical Scope
          
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Methodology</b> –   Targeted RNA sequencing
 
@@ -39,7 +54,11 @@ Technical Scope
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Applications</b> – 
                 <ul>
@@ -56,7 +75,11 @@ Technical Scope
             </li>
             
             {/* <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Common Genes</b> –  
                 <ul>
@@ -83,6 +106,7 @@ Technical Scope
 
 
         <div>
+<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Clinical Applications
           </div>
@@ -91,6 +115,16 @@ Technical Scope
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
+            Clinical Applications
+          </div>
+
+          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+            
+            <li className="flex items-start gap-3">
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Non-Small Cell Lung Cancer
 
@@ -98,28 +132,44 @@ Non-Small Cell Lung Cancer
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Sarcomas
               </p>
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Thyroid Cancer
        </p>
             </li>
 
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Hematological Malignancies
 </p>
             </li>
             
             <li className="flex items-start gap-3">
+<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
+=======
+              <span className="text-green-500 mt-1 text-xl">•</span>
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Pediatric Tumors
 </p>

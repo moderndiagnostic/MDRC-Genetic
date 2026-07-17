@@ -65,10 +65,17 @@ const ServicesOverview = () => (
     <div className="container mx-auto px-4 sm:px-6">
       <div className="text-center mx-auto mb-5 sm:mb-6 md:mb-8">
         <span className="text-[#15AEE5] text-sm sm:text-base font-medium">Our Expertise</span>
+<<<<<<< HEAD
         <h2 className="font-heading text-xl sm:text-2xl md:text-[25px] font-bold mt-1 mb-1">
         Specialised Genetic & Molecular Services
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-[#424040] leading-relaxed px-2">
+=======
+        <h2 className="font-heading text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold mt-1 mb-1">
+        Specialised Genetic & Molecular Services
+        </h2>
+        <p className="text-sm sm:text-base md:text-lg lg:text-[20px] text-[#424040] font-regular px-2">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           From prenatal screening to rare disease diagnosis, our laboratory delivers clinically validated genomic insights.
         </p>
       </div>
@@ -91,6 +98,7 @@ const ServicesOverview = () => (
   <service.icon className="text-white" />
 </div>
 
+<<<<<<< HEAD
         <h3 className="font-modium text-base md:text-lg font-semibold mb-1.5 sm:mb-2">
           {service.title}
         </h3>
@@ -100,6 +108,17 @@ const ServicesOverview = () => (
         </p>
 
         <span className="inline-flex items-center gap-1 text-sm sm:text-base font-medium text-[#15AEE5] group-hover:gap-2 transition-all">
+=======
+        <h3 className="font-modium text-base sm:text-lg lg:text-[20px] mb-1.5 sm:mb-2">
+          {service.title}
+        </h3>
+
+        <p className="text-[#727070] text-sm sm:text-[15px] lg:text-[16px] mb-2 sm:mb-3">
+          {service.description}
+        </p>
+
+        <span className="inline-flex items-center gap-1 text-[16px] font-medium text-[#15AEE5] group-hover:gap-2 transition-all">
+>>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           Learn More <ArrowRight className="w-4 h-4" />
         </span>
       </Link>
