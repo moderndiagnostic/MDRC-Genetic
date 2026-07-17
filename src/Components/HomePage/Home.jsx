@@ -19,7 +19,7 @@ const Home = () => (
    
 
     {/* ✅ HERO SECTION */}
-    <div className="overflow-x-hidden pt-28 lg:pt-32">
+    <div className="overflow-x-hidden pt-[6.25rem] lg:pt-[7.25rem]">
       <HeroSection />
     </div>
 

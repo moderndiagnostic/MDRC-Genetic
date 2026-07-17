@@ -11,42 +11,75 @@ export const navLinks = [
   },
   {
     label: "Metabolomics Services",
-    path: "/services/metabolomics-services",
+    path: "/services/metabolomics",
     dropdown: [
       {
         label: "Longevity Panel",
-        path: "/services/metabolomics-services/longevity-panel",
+        path: "/services/metabolomics/longevity-panel",
         dropdown: [
-          { label: "Methylation Status Analysis", path: "#" },
-          { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
+          {
+            label: "Methylation Status Analysis",
+            path: "/service/methylation-status-analysis",
+          },
+          {
+            label: "Omega-3 : Omega-6 Fatty Acid Ratio",
+            path: "/service/omega-3-omega-6-fatty-acid-ratio",
+          },
           { label: "NAD+ / NADH Ratio", path: "#" },
           { label: "GSH / GSSG Ratio", path: "#" },
         ],
       },
       {
         label: "Gut Microbiome Health Assessment Panel",
-        path: "#",
+        path: "/service/gut-microbiome-health-assessment-panel",
       },
       {
         label: "Neurotransmitter and Catecholamine Assessment",
-        path: "#",
+        path: "/service/neurotransmitter-and-catecholamine-assessment",
       },
-      { label: "Autism Assessment Panel", path: "#" },
-      { label: "Depression Assessment Panel", path: "#" },
+      {
+        label: "Neuro-Metabolic & Inflammatory",
+        path: "/service/neuro-metabolic-and-inflammatory",
+      },
+      {
+        label: "Autism Assessment Panel",
+        path: "/service/autism-assessment-panel",
+      },
+      {
+        label: "Depression Assessment Panel",
+        path: "/service/depression-assessment-panel",
+      },
       {
         label: "Complete Fat and Water-Soluble Vitamin Panel",
-        path: "#",
+        path: "/service/complete-fat-and-water-soluble-vitamin-panel",
       },
       {
         label: "High Precision Assessment of Vitamin D Status",
-        path: "#",
+        path: "/service/high-precision-assessment-of-vitamin-d-status",
       },
       {
         label: "New Born Screening for Errors of Metabolism",
-        path: "#",
+        path: "/service/new-born-screening-for-errors-of-metabolism",
       },
       { label: "Confirmation of Errors of Metabolism", path: "#" },
-      { label: "Therapeutic Drug Monitoring", path: "#" },
+      {
+        label: "Therapeutic Drug Monitoring",
+        path: "#",
+        dropdown: [
+          {
+            label: "TDM (First-Line Anti-Tuberculosis Drugs)",
+            path: "/service/tdm-first-line-anti-tuberculosis-drugs",
+          },
+          {
+            label: "TDM (Neuropsychiatric Drugs)",
+            path: "/service/tdm-neuropsychiatric-drugs",
+          },
+          {
+            label: "TDM (Methotrexate)",
+            path: "/service/tdm-methotrexate",
+          },
+        ],
+      },
       { label: "Drugs of Abuse Levels", path: "#" },
     ],
   },

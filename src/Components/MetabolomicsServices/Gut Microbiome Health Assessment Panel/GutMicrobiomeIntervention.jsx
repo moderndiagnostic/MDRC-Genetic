@@ -1,0 +1,58 @@
+import React from "react";
+
+const interventions = [
+  {
+    title: "Targeted Probiotics",
+    desc: "Flooding your system with the exact natural compounds needed to clear toxic overgrowths and reseed missing, beneficial bacterial strains.",
+  },
+  {
+    title: "Nutritional Shifts",
+    desc: "Modifying your intake of specific proteins, fibres, and polyphenols to starve harmful microbes while fuelling your protective gut species.",
+  },
+  {
+    title: "Barrier Support Protocols",
+    desc: "Utilizing targeted gut-healing nutrients to repair intestinal permeability, stopping toxic organic acids from leaking into your bloodstream.",
+  },
+];
+
+const GutMicrobiomeIntervention = () => {
+  return (
+    <section className="w-full py-10 md:py-14 bg-white font-roboto">
+      <div className="max-w-5xl mx-auto px-4 text-left">
+        <h2 className="text-2xl md:text-[28px] font-bold text-gray-800 mb-4">
+          Knowledge is Power. Intervention is the Cure.
+        </h2>
+
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4 max-w-3xl">
+          The most important thing to know about your gut-driven inflammatory burden is that it is not set in stone. Because this panel measures active, dynamic microbial processes rather than permanent genetic traits, your results are entirely changeable. A high toxic burden or low protective score is a clear call to action, not a final sentence.
+        </p>
+
+        <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10 max-w-3xl">
+          Based on your unique snapshot, we can design highly targeted, personalized interventions to help you cool gut inflammation and restore balance. Your data-driven plan may include:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {interventions.map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-gray-100 rounded-xl p-6 shadow-[0_0_10px_#e5e5e5] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 text-left"
+            >
+              <div
+                className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-white font-bold text-lg"
+                style={{ background: "linear-gradient(to right, #15AEE5, #0C607F)" }}
+              >
+                {idx + 1}
+              </div>
+              <h3 className="text-lg font-semibold text-[#005C96] mb-2">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 text-base leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default GutMicrobiomeIntervention;

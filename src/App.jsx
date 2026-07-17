@@ -80,6 +80,19 @@ import HematologicalMalignancyGenomics from "./Components/Oncology/Hematological
 import LiquidBiopsy from "./Components/Oncology/Liquid Biopsy (ctDNA Analysis)/LiquidBiopsy";
 import HereditaryCancerGenomics from "./Components/Oncology/Hereditary Cancer Genomics (Germline Testing)/HereditaryCancerGenomics";
 import RNASequencingforFusion from "./Components/Oncology/RNA Sequencing for Fusion Detection/RNASequencingforFusion";
+import GutMicrobiomePanel from "./Components/MetabolomicsServices/Gut Microbiome Health Assessment Panel/GutMicrobiomePanel";
+import NeuroCatecholaminePanel from "./Components/MetabolomicsServices/Neurotransmitter and Catecholamine Assessment/NeuroCatecholaminePanel";
+import NeuroMetabolicPanel from "./Components/MetabolomicsServices/Neuro Metabolic and Inflammatory Panel/NeuroMetabolicPanel";
+import AutismPanel from "./Components/MetabolomicsServices/Autism Assessment Panel/AutismPanel";
+import DepressionPanel from "./Components/MetabolomicsServices/Depression Assessment Panel/DepressionPanel";
+import MethylationPanel from "./Components/MetabolomicsServices/Longevity Panels/Methylation Status Analysis/MethylationPanel";
+import OmegaPanel from "./Components/MetabolomicsServices/Longevity Panels/Omega Fatty Acid Ratio/OmegaPanel";
+import CompleteVitaminPanel from "./Components/MetabolomicsServices/Complete Vitamin Panel/CompleteVitaminPanel";
+import VitaminDPanel from "./Components/MetabolomicsServices/Vitamin D Status/VitaminDPanel";
+import NewbornScreeningPanel from "./Components/MetabolomicsServices/Newborn Screening/NewbornScreeningPanel";
+import AntiTBPanel from "./Components/MetabolomicsServices/Therapeutic Drug Monitoring/AntiTB/AntiTBPanel";
+import NeuropsychPanel from "./Components/MetabolomicsServices/Therapeutic Drug Monitoring/Neuropsychiatric/NeuropsychPanel";
+import MethotrexatePanel from "./Components/MetabolomicsServices/Therapeutic Drug Monitoring/Methotrexate/MethotrexatePanel";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -127,8 +140,8 @@ function App() {
           <Route path="/services/modern-dna-panels" element={<ModernDNAPanel />} />
           <Route path="/services/modern-dna-panels/microarray" element={<MicroarrayPanel />} />
           <Route path="/services/modern-dna-panels/ngs-panels" element={<NGSPanel />} />
-          <Route path="/services/metabolomics-services" element={<MetabolomicsServices />} />
-          <Route path="/services/metabolomics-services/longevity-panel" element={<LongevityPanel />} />
+          <Route path="/services/metabolomics" element={<MetabolomicsServices />} />
+          <Route path="/services/metabolomics/longevity-panel" element={<LongevityPanel />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/terms-and-conditions" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -200,6 +213,19 @@ function App() {
           <Route path="/service/liquidbiopsy" element={<LiquidBiopsy/>} />
           <Route path="/service/hereditarycancergenomics" element={<HereditaryCancerGenomics/>} />
           <Route path="/service/rnasequencingforfusion" element={<RNASequencingforFusion/>} />
+          <Route path="/service/gut-microbiome-health-assessment-panel" element={<GutMicrobiomePanel/>} />
+          <Route path="/service/neurotransmitter-and-catecholamine-assessment" element={<NeuroCatecholaminePanel/>} />
+          <Route path="/service/neuro-metabolic-and-inflammatory" element={<NeuroMetabolicPanel/>} />
+          <Route path="/service/autism-assessment-panel" element={<AutismPanel/>} />
+          <Route path="/service/depression-assessment-panel" element={<DepressionPanel/>} />
+          <Route path="/service/methylation-status-analysis" element={<MethylationPanel/>} />
+          <Route path="/service/omega-3-omega-6-fatty-acid-ratio" element={<OmegaPanel/>} />
+          <Route path="/service/complete-fat-and-water-soluble-vitamin-panel" element={<CompleteVitaminPanel/>} />
+          <Route path="/service/high-precision-assessment-of-vitamin-d-status" element={<VitaminDPanel/>} />
+          <Route path="/service/new-born-screening-for-errors-of-metabolism" element={<NewbornScreeningPanel/>} />
+          <Route path="/service/tdm-first-line-anti-tuberculosis-drugs" element={<AntiTBPanel/>} />
+          <Route path="/service/tdm-neuropsychiatric-drugs" element={<NeuropsychPanel/>} />
+          <Route path="/service/tdm-methotrexate" element={<MethotrexatePanel/>} />
           </Route>
         </Routes>
 

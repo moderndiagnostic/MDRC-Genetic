@@ -28,20 +28,7 @@ const logo =
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-
-        {/* Top Bar */}
-        <div className="h-12 bg-gray-100 flex items-center px-4 gap-4">
-          <img
-            src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828018/vite-project/xj4xw61kf7ppx5ovzv5w.svg"
-            className="h-6 shrink-0"
-          />
-
-          <img
-            src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828063/vite-project/sdx6ru1wht1omol4ghkh.svg"
-            className="h-6 shrink-0"
-          />
-        </div>
+      <nav className="fixed top-9 left-0 right-0 z-50 bg-white shadow-sm">
 
         {/* Main Header */}
         <div className="w-full max-w-[1680px] mx-auto px-4 lg:px-6">
