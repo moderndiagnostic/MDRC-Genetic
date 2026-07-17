@@ -2,9 +2,9 @@ import React from "react";
 
 const HighResolutionBandingDiseases = () => {
   return (
-    <section className="w-full  py-10 md:py-14">
+    <section className="w-full py-8 sm:py-10 md:py-14">
       
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-20">
         
        
         <div className="w-full md:w-1/2">
@@ -19,7 +19,7 @@ const HighResolutionBandingDiseases = () => {
         <div className="w-full md:w-1/2">
           
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 text-center md:text-left">
 Genomic Evaluation of Neurogenetic Conditions
 
           </h2>
@@ -27,7 +27,7 @@ Genomic Evaluation of Neurogenetic Conditions
 Molecular Diagnostics</p> */}
 
         
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-center md:text-left">
 MDRC provides comprehensive genetic testing for neurological disorders, enabling identification of pathogenic variants associated with epilepsy, neurodevelopmental delay, neuropathies, and neurodegenerative conditions. Advanced sequencing techniques support precise molecular diagnosis and guide clinical management.
           </p>
 

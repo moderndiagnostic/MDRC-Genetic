@@ -33,194 +33,187 @@ const logo =
         {/* Main Header */}
         <div className="w-full max-w-[1680px] mx-auto px-4 lg:px-6">
 
-          <div className="flex items-center justify-between gap-4 h-16 lg:h-20">
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 h-16 lg:h-[4.75rem]">
 
-            {/* Logo */}
-            <Link to="/" className="shrink-0">
-              <img src={logo} className="h-12 lg:h-14 w-auto" />
+            {/* Left: Logo */}
+            <Link to="/" className="shrink-0 justify-self-start">
+              <img src={logo} alt="MODERN Diagnostic & Research Centre" className="h-11 lg:h-14 w-auto" />
             </Link>
 
-            {/* Desktop Menu */}
-            <div className="hidden xl:flex flex-1 items-center justify-center gap-1 2xl:gap-2 text-[15px] 2xl:text-sm text-gray-700">
+            {/* Center: Nav links */}
+            <div className="hidden xl:flex items-center justify-center gap-1 2xl:gap-1.5 text-[15px] 2xl:text-base text-gray-700">
+                {navLinks.map((link, index) => (
+                  <div key={index} className="relative group shrink-0 font-semibold">
 
-              {navLinks.map((link, index) => (
-                <div key={index} className="relative group shrink-0 font-semibold">
-
-                  {!link.dropdown ? (
-                    <Link
-                      to={link.path}
-                      aria-label={link.path === "/" ? "Home" : undefined}
-                      title={link.path === "/" ? "Home" : undefined}
-                      className={`block whitespace-nowrap px-2 2xl:px-3 py-2 rounded font-semibold ${
-                        location.pathname === link.path &&
-                        navLinks.findIndex((item) => item.path === location.pathname) === index
-                          ? "bg-gray-100"
-                          : "hover:bg-gray-50"
-                      } ${link.path === "/" ? "flex items-center justify-center" : ""}`}
-                    >
-                      {link.path === "/" ? (
-                        <Home className="w-5 h-5" strokeWidth={2.25} />
-                      ) : (
-                        link.label
-                      )}
-                    </Link>
-                  ) : (
-                    <>
-                      {link.label === "Metabolomics Services" ||
-                      link.label === "Modern DNA Panels" ? (
-                        <Link
-                          to={link.path}
-                          className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary"
-                        >
-                          {link.label}
-                          <ChevronDown className="w-4 h-4" />
-                        </Link>
-                      ) : (
-                        <button className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary">
-                        {link.label}
-                        <ChevronDown className="w-4 h-4" />
-                        </button>
-                      )}
-
-                      {/* Dropdown */}
-                      <div
-                        className={`
-                          absolute
-                          top-full
-                          z-[60]
-                          bg-white
-                          rounded-xl
-                          shadow-xl
-                          opacity-0
-                          invisible
-                          group-hover:opacity-100
-                          group-hover:visible
-                          transition-all
-                          duration-200
-                          ${
-                            link.label === "Metabolomics Services"
-                              ? "left-0 w-96 max-h-[calc(100vh-9rem)] overflow-visible"
-                              : link.label === "Genomic Services" ||
-                                link.label === "Contact Us"
-                              ? "right-0 w-72"
-                              : "left-0 w-72"
-                          }
-                        `}
+                    {!link.dropdown ? (
+                      <Link
+                        to={link.path}
+                        aria-label={link.path === "/" ? "Home" : undefined}
+                        title={link.path === "/" ? "Home" : undefined}
+                        className={`block whitespace-nowrap px-2.5 2xl:px-3 py-2 rounded-lg font-semibold transition-colors ${
+                          location.pathname === link.path &&
+                          navLinks.findIndex((item) => item.path === location.pathname) === index
+                            ? "bg-[#E8F6FB] text-[#005E91]"
+                            : "hover:bg-gray-50 hover:text-[#005E91]"
+                        } ${link.path === "/" ? "flex items-center justify-center" : ""}`}
                       >
-                        {link.dropdown.map((item, i) => (
-  <div key={i} className="relative group/item">
+                        {link.path === "/" ? (
+                          <Home className="w-5 h-5" strokeWidth={2.25} />
+                        ) : (
+                          link.label
+                        )}
+                      </Link>
+                    ) : (
+                      <>
+                        {link.label === "Metabolomics Services" ||
+                        link.label === "Modern DNA Panels" ? (
+                          <Link
+                            to={link.path}
+                            className="flex items-center gap-1 whitespace-nowrap px-2.5 2xl:px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#005E91] transition-colors"
+                          >
+                            {link.label}
+                            <ChevronDown className="w-4 h-4 opacity-70" />
+                          </Link>
+                        ) : (
+                          <button className="flex items-center gap-1 whitespace-nowrap px-2.5 2xl:px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#005E91] transition-colors">
+                            {link.label}
+                            <ChevronDown className="w-4 h-4 opacity-70" />
+                          </button>
+                        )}
 
-    {item.dropdown ? (
-      <>
-        <Link
-          to={item.path}
-          className="flex justify-between items-center gap-2 px-5 py-3 hover:bg-gray-50 font-medium"
-        >
-          <span>{item.label}</span>
-          <ChevronDown className="w-4 h-4 shrink-0 -rotate-90" />
-        </Link>
+                        {/* Dropdown */}
+                        <div
+                          className={`
+                            absolute
+                            top-full
+                            z-[60]
+                            bg-white
+                            rounded-xl
+                            shadow-xl
+                            opacity-0
+                            invisible
+                            group-hover:opacity-100
+                            group-hover:visible
+                            transition-all
+                            duration-200
+                            ${
+                              link.label === "Metabolomics Services"
+                                ? "left-0 w-96 max-h-[calc(100vh-9rem)] overflow-visible"
+                                : link.label === "Genomic Services" ||
+                                  link.label === "Contact Us"
+                                ? "left-0 w-72"
+                                : "left-0 w-72"
+                            }
+                          `}
+                        >
+                          {link.dropdown.map((item, i) => (
+                            <div key={i} className="relative group/item">
+                              {item.dropdown ? (
+                                <>
+                                  <Link
+                                    to={item.path}
+                                    className="flex justify-between items-center gap-2 px-5 py-3 hover:bg-gray-50 font-medium"
+                                  >
+                                    <span>{item.label}</span>
+                                    <ChevronDown className="w-4 h-4 shrink-0 -rotate-90" />
+                                  </Link>
 
-        {/* LEVEL 2 DROPDOWN */}
-        <div
-          className={`
-            absolute
-            top-0
-            z-[70]
-            w-80
-            max-h-[calc(100vh-9rem)]
-            overflow-y-auto
-            bg-white
-            rounded-xl
-            shadow-xl
-            opacity-0
-            invisible
-            group-hover/item:opacity-100
-            group-hover/item:visible
-            transition-all
-            duration-200
-            z-50
-            pointer-events-none
-            group-hover/item:pointer-events-auto
-            ${
-              link.label === "Genomic Services"
-                ? "right-full"
-                : "left-full"
-            }
-          `}
-        >
-          {item.dropdown.map((sub, j) => (
-            <Link
-              key={j}
-              to={sub.path}
-              className="block px-5 py-3 text-sm hover:bg-gray-50 font-medium leading-snug"
-            >
-              {sub.label}
-            </Link>
-          ))}
-        </div>
-      </>
-    ) : (
-      <Link
-        to={item.path}
-        className="block px-5 py-3 hover:bg-gray-50 font-medium"
-      >
-        {item.label}
-      </Link>
-    )}
+                                  <div
+                                    className={`
+                                      absolute
+                                      top-0
+                                      z-[70]
+                                      w-80
+                                      max-h-[calc(100vh-9rem)]
+                                      overflow-y-auto
+                                      bg-white
+                                      rounded-xl
+                                      shadow-xl
+                                      opacity-0
+                                      invisible
+                                      group-hover/item:opacity-100
+                                      group-hover/item:visible
+                                      transition-all
+                                      duration-200
+                                      pointer-events-none
+                                      group-hover/item:pointer-events-auto
+                                      left-full
+                                    `}
+                                  >
+                                    {item.dropdown.map((sub, j) => (
+                                      <Link
+                                        key={j}
+                                        to={sub.path}
+                                        className="block px-5 py-3 text-sm hover:bg-gray-50 font-medium leading-snug"
+                                      >
+                                        {sub.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                </>
+                              ) : (
+                                <Link
+                                  to={item.path}
+                                  className="block px-5 py-3 hover:bg-gray-50 font-medium"
+                                >
+                                  {item.label}
+                                </Link>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </>
+                    )}
+                  </div>
+                ))}
+            </div>
 
-  </div>
-))}
-                      </div>
-                    </>
-                  )}
-                </div>
-              ))}
-
+            {/* Right: Search + Book Tests */}
+            <div className="hidden xl:flex items-center gap-2 shrink-0 justify-self-end">
               <SiteSearch
                 variant="navbar"
                 onNavigate={() => setIsOpen(false)}
-                className="w-32 2xl:w-40 shrink-0"
+                className="shrink-0"
               />
 
-              {/* BOOK TESTS BUTTON */}
               <button
                 onClick={() => setShowPopup(true)}
                 className="
-                  bg-[#005E91]
-                  hover:bg-[#004E7A]
+                  h-10
+                  bg-gradient-to-r from-[#005E91] to-[#0C759A]
+                  hover:from-[#004E7A] hover:to-[#005E91]
                   text-white
                   px-4
-                  2xl:px-6
-                  py-3
-                  rounded-xl
+                  2xl:px-5
+                  rounded-full
                   font-semibold
                   whitespace-nowrap
                   transition-all
                   duration-300
-                  hover:scale-105
-                  shadow-lg
+                  shadow-[0_6px_16px_rgba(0,94,145,0.28)]
                   flex
                   items-center
-                  gap-2
+                  justify-center
+                  text-sm
                 "
               >
                 Book Tests
               </button>
-
             </div>
 
-            <div className="flex items-center gap-2 shrink-0 xl:hidden">
+            <div className="flex items-center gap-2.5 shrink-0 xl:hidden justify-self-end col-start-3">
               <SiteSearch
                 variant="navbar"
                 onNavigate={() => setIsOpen(false)}
-                className="w-28 sm:w-32"
+                className="shrink-0"
               />
 
-              {/* Mobile Toggle */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Close menu" : "Open menu"}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50"
               >
-                {isOpen ? <X /> : <Menu />}
+                {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
             </div>
 

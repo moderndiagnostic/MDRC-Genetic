@@ -2,9 +2,9 @@ import React from "react";
 
 const Oncology = () => {
   return (
-    <section className="w-full  py-10 md:py-14">
+    <section className="w-full py-8 sm:py-10 md:py-14">
       
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-20">
         
        
         <div className="w-full md:w-1/2">
@@ -19,7 +19,7 @@ const Oncology = () => {
         <div className="w-full md:w-1/2">
           
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 text-center md:text-left">
            Oncology Genomics
 
           </h2>
@@ -28,11 +28,11 @@ const Oncology = () => {
 </p>
 
         
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-center md:text-left">
           MDRC Genomics delivers advanced molecular oncology services focused on the identification of clinically actionable genetic alterations in cancer. Using high-resolution sequencing technologies, our laboratory enables precise tumor profiling to support early diagnosis, prognostic stratification, and selection of targeted therapies.
 
           </p>
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-center md:text-left">
 Cancer is fundamentally a genomic disease driven by somatic and germline alterations. Comprehensive genomic analysis allows detection of driver mutations, resistance mechanisms, and biomarkers that guide personalized treatment decisions in both solid tumors and hematological malignancies.
 
           </p>

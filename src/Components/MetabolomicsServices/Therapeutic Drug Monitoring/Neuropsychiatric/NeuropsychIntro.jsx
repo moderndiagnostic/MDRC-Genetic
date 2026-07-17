@@ -4,7 +4,7 @@ import introImg from "../../../../assets/tdm-neuropsych-intro.png";
 const NeuropsychIntro = () => {
   return (
     <section className="w-full py-6 sm:py-8 bg-[#0C759A] md:bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-4 md:gap-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-5 sm:gap-6 md:gap-10">
         <div className="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
           <h2 className="text-lg sm:text-xl md:text-[25px] font-semibold text-white md:text-gray-800 mb-3 sm:mb-4 leading-snug">
             Therapeutic Drug Monitoring (TDM) of Neuropsychiatric Drugs (Neuroleptics & Anti-Epileptics)
@@ -16,7 +16,7 @@ const NeuropsychIntro = () => {
             The Therapeutic Drug Monitoring (TDM) Panel for Neuropsychiatric Drugs utilizes high-precision Liquid Chromatography-Tandem Mass Spectrometry (LC-MS/MS) to track exactly how your body processes these vital medications. Rather than relying on standard weight-based dosing or trial-and-error, this panel measures your exact blood concentrations at critical time intervals. This provides your medical team with the definitive, objective data needed to personalize your dosage for maximum safety, emotional balance, and physical vitality.
           </p>
         </div>
-        <div className="group w-full md:w-1/2 order-2 md:order-1 max-w-md md:max-w-none mx-auto px-2 sm:px-4 md:px-0">
+        <div className="group w-full md:w-1/2 order-2 md:order-1 max-w-xs sm:max-w-md md:max-w-none mx-auto px-1 sm:px-4 md:px-0">
           <div className="relative isolate">
             <div
               aria-hidden="true"

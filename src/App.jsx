@@ -127,7 +127,8 @@ function App() {
           <Route element={<PageLayout />}>
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<BlogSection />} />
-           <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/blogs/:slug" element={<BlogDetail />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/services/reproductive-health-pregnancy" element={<HealthPregnancy />} />
           <Route path="/services/infectious-Disease" element={<InfectiousDisease />} />
           <Route path="/services/cyto-genetic-and-fish" element={<CytogeneticandFISH />} />

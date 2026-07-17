@@ -27,7 +27,7 @@ const NIPT = () => {
                 <img
                   src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828054/vite-project/x37csmszlwzms69b44yo.svg"
                   alt="EVAA Prenatal Screening"
-                  className="rounded-full w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] object-cover"
+                  className="rounded-full w-[160px] h-[160px] sm:w-[220px] sm:h-[220px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] object-cover"
                 />
               </div>
               <div className="absolute inset-0 rounded-full bg-white/20 blur-2xl pointer-events-none" />

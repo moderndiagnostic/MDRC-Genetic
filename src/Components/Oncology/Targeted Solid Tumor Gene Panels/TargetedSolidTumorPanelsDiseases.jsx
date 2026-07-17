@@ -2,9 +2,9 @@ import React from "react";
 
 const TargetedSolidTumorPanelsDiseases = () => {
   return (
-    <section className="w-full  py-10 md:py-14">
+    <section className="w-full py-8 sm:py-10 md:py-14">
       
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-20">
         
        
         <div className="w-full md:w-1/2">
@@ -19,7 +19,7 @@ const TargetedSolidTumorPanelsDiseases = () => {
         <div className="w-full md:w-1/2">
           
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 text-center md:text-left">
 Targeted Solid Tumor Gene Panels
 
           </h2>
@@ -27,7 +27,7 @@ Targeted Solid Tumor Gene Panels
 Molecular Diagnostics</p> */}
 
         
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-center md:text-left">
 Targeted gene panels focus on a curated set of clinically relevant oncogenes and tumor suppressor genes, enabling high-depth sequencing and sensitive detection of actionable variants. These panels are optimized for routine clinical diagnostics and companion biomarker testing.
           </p>
 

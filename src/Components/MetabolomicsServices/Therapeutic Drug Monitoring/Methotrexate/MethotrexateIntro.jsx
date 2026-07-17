@@ -4,7 +4,7 @@ import introImg from "../../../../assets/tdm-methotrexate-intro.png";
 const MethotrexateIntro = () => {
   return (
     <section className="w-full py-6 sm:py-8 bg-[#0C759A] md:bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-6 sm:gap-4 md:gap-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-5 sm:gap-6 md:gap-10">
         <div className="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
           <h2 className="text-lg sm:text-xl md:text-[25px] font-semibold text-white md:text-gray-800 mb-3 sm:mb-4 leading-snug">
             Therapeutic Drug Monitoring (TDM) of Methotrexate
@@ -16,7 +16,7 @@ const MethotrexateIntro = () => {
             The Therapeutic Drug Monitoring (TDM) Panel for Methotrexate utilizes high-precision Liquid Chromatography-Tandem Mass Spectrometry (LC-MS/MS) to track exactly how your body processes this medication in real time. Rather than relying on generic predictions, this panel maps your precise personal drug clearance curve. This delivers the high-density data required to adjust your doses or initiate timely, life-saving antidote strategies (such as Leucovorin rescue) with absolute precision.
           </p>
         </div>
-        <div className="group w-full md:w-1/2 order-2 md:order-1 max-w-md md:max-w-none mx-auto px-2 sm:px-4 md:px-0">
+        <div className="group w-full md:w-1/2 order-2 md:order-1 max-w-xs sm:max-w-md md:max-w-none mx-auto px-1 sm:px-4 md:px-0">
           <div className="relative isolate">
             <div
               aria-hidden="true"

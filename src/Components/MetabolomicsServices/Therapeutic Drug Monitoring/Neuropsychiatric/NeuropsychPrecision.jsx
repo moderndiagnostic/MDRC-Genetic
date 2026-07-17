@@ -16,28 +16,28 @@ const features = [
 ];
 
 const NeuropsychPrecision = () => (
-  <section className="w-full py-10 md:py-14 bg-white font-roboto">
-    <div className="max-w-5xl mx-auto px-4 text-left">
-      <h2 className="text-2xl md:text-[28px] font-bold text-gray-800 mb-4">
+  <section className="w-full py-8 sm:py-10 md:py-14 bg-white font-roboto">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center sm:text-left">
+      <h2 className="text-xl sm:text-2xl md:text-[28px] font-bold text-gray-800 mb-3 sm:mb-4">
         The Flawless Precision of LC-MS/MS Technology
       </h2>
-      <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-10 max-w-3xl">
+      <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-10 max-w-3xl mx-auto sm:mx-0">
         Conventional laboratory tracking methods often struggle with cross-reactivity or fail to distinguish between a parent drug and its active metabolites. This panel redefines neuropsychiatric diagnostics through advanced mass spectrometry:
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
         {features.map((item, idx) => (
           <div
             key={idx}
-            className="bg-gray-100 rounded-xl p-6 shadow-[0_0_10px_#e5e5e5] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 text-left"
+            className="metab-card bg-gray-100 rounded-xl p-4 sm:p-6 shadow-[0_0_10px_#e5e5e5] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)] transition-all duration-300 text-left h-full"
           >
             <div
-              className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-white font-bold text-lg"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mb-3 sm:mb-4 text-white font-bold text-base sm:text-lg"
               style={{ background: "linear-gradient(to right, #15AEE5, #0C607F)" }}
             >
               {idx + 1}
             </div>
-            <h3 className="text-lg font-semibold text-[#005C96] mb-2">{item.title}</h3>
-            <p className="text-gray-600 text-base leading-relaxed">{item.desc}</p>
+            <h3 className="text-base sm:text-lg font-semibold text-[#005C96] mb-2 leading-snug">{item.title}</h3>
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>

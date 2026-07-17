@@ -2,19 +2,35 @@
   "blogs": [
     {
       "title": "Identifies the right drug and dosage",
-      "image": "/assets/bl1.svg",
-      "slug": "understanding-genomic-sequencing"
+      "image": "/assets/blog-right-drug-dosage.png",
+      "slug": "identifies-the-right-drug-and-dosage",
+      "publishedAt": "2026-07-17",
+      "category": "Medication Safety",
+      "type": "Guide"
     },
     {
       "title": "Uses Next-Generation Sequencing",
-      "image": "/assets/lab-technicians-talking-video-call-with-professional-chemist-doctor-explaning-vaccine-reactions 1.svg",
-      "slug": "role-of-pharmacogenomics"
+      "image": "/assets/blog-next-generation-sequencing.png",
+      "slug": "uses-next-generation-sequencing",
+      "publishedAt": "2026-07-17",
+      "category": "Genomics",
+      "type": "Insight"
     },
     {
-      "title": "Offers clarity through non-invasive prenata",
+      "title": "Offers clarity through non-invasive prenatal",
       "image": "/assets/bl2.svg",
-      "slug": "advances-in-infectious-disease-testing"
+      "slug": "offers-clarity-through-non-invasive-prenatal",
+      "publishedAt": "2026-05-20",
+      "category": "Prenatal",
+      "type": "Guide"
+    },
+    {
+      "title": "Is It in Your Genes?",
+      "image": "/assets/bl2.svg",
+      "slug": "is-it-in-your-genes",
+      "publishedAt": "2026-04-08",
+      "category": "Diagnostics",
+      "type": "News"
     }
-  
   ]
 }

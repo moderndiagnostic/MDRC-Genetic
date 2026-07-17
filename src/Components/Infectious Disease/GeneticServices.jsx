@@ -70,21 +70,21 @@ const GeneticServices = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-center text-[24px] md:text-[26px] font-semibold text-[#1f4e79] mb-12">
+        <h2 className="text-center text-xl sm:text-2xl md:text-[26px] font-semibold text-[#1f4e79] mb-8 sm:mb-12 px-2 leading-snug">
           Explore our specialized reproductive genetic services below
         </h2>
 
         {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
 
           {services.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md p-8 flex gap-5 hover:shadow-xl hover:-translate-y-1 transition duration-300"
+              className="bg-white rounded-xl shadow-md p-5 sm:p-6 md:p-8 flex flex-col sm:flex-row gap-4 sm:gap-5 hover:shadow-xl hover:-translate-y-1 transition duration-300 h-full"
             >
               
               {/* Image Box */}
-              <div className="min-w-[70px] h-[70px] flex items-center justify-center rounded-lg bg-gradient-to-r from-[#15AEE5] to-[#0C607F]">
+              <div className="w-[56px] h-[56px] sm:min-w-[70px] sm:w-[70px] sm:h-[70px] shrink-0 flex items-center justify-center rounded-lg bg-gradient-to-r from-[#15AEE5] to-[#0C607F]">
                 <img
                   src={item.img}
                   alt={item.title}
@@ -94,7 +94,7 @@ const GeneticServices = () => {
 
               {/* Content */}
               <div>
-                <h3 className="text-[20px] font-semibold text-[#1f4e79] mb-2">
+                <h3 className="text-base sm:text-lg md:text-[20px] font-semibold text-[#1f4e79] mb-2 leading-snug">
                   {item.title}
                 </h3>
 
