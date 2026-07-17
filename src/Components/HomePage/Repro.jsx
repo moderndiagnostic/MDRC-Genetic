@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const cards = [
   {
     title: "KARYOTYPING",
-=======
-import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
-const cards = [
-  {
-    title: "KAROTYPING",
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
     img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827820/vite-project/qkdwtp5jzkfigoccsbwt.jpg",
     path: "/service/bloodculturekaryotyping",
   },
@@ -57,15 +48,11 @@ const cards = [
 const ServiceCard = ({ card }) => {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
-<<<<<<< HEAD
   const isLinked = card.path && card.path !== "#";
-=======
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition h-full">
       {/* Header */}
-<<<<<<< HEAD
       <div className="bg-gray-100 px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-center font-semibold text-[#005C96] text-xs sm:text-sm md:text-base text-center min-h-[40px] sm:min-h-[44px]">
         {isLinked ? (
           <Link to={card.path} className="hover:underline">
@@ -74,10 +61,6 @@ const ServiceCard = ({ card }) => {
         ) : (
           <span>{card.title}</span>
         )}
-=======
-      <div className="bg-gray-100 px-3 py-2 sm:px-4 sm:py-2.5 flex items-center justify-center font-semibold text-[#005C96] text-xs sm:text-sm md:text-base lg:text-lg text-center min-h-[40px] sm:min-h-[44px]">
-        <span>{card.title}</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
       </div>
 
       {/* Image area */}
@@ -115,7 +98,6 @@ const ServiceCard = ({ card }) => {
 
         {/* Know More Button */}
         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-max">
-<<<<<<< HEAD
           {isLinked ? (
             <Link
               to={card.path}
@@ -128,21 +110,12 @@ const ServiceCard = ({ card }) => {
               Know More →
             </span>
           )}
-=======
-          <Link
-            to={card.path}
-            className="bg-white text-[#005C96] px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold shadow-lg border border-gray-200 hover:bg-[#005C96] hover:text-white transition-all duration-300 inline-block whitespace-nowrap"
-          >
-            Know More →
-          </Link>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
         </div>
       </div>
     </div>
   );
 };
 
-<<<<<<< HEAD
 const Repro = () => {
   const sliderRef = useRef(null);
   const scrollEndTimerRef = useRef(null);
@@ -215,80 +188,6 @@ const Repro = () => {
       window.clearTimeout(scrollEndTimerRef.current);
     };
   }, [isPaused]);
-=======
-const Repro = () => {
-  const sliderRef = useRef(null);
-  const scrollEndTimerRef = useRef(null);
-  const [isPaused, setIsPaused] = useState(false);
-
-  const getScrollStep = () => {
-    const slider = sliderRef.current;
-    if (!slider?.firstElementChild) return 276;
-    const gap = window.innerWidth >= 768 ? 24 : 16;
-    return slider.firstElementChild.offsetWidth + gap;
-  };
-
-  const resetLoopPosition = () => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-
-    const firstClone = slider.children[cards.length];
-    if (!firstClone) return;
-
-    const loopWidth =
-      firstClone.getBoundingClientRect().left -
-      slider.firstElementChild.getBoundingClientRect().left;
-
-    if (slider.scrollLeft >= loopWidth - 2) {
-      slider.style.scrollBehavior = "auto";
-      slider.style.scrollSnapType = "none";
-      slider.scrollLeft -= loopWidth;
-
-      requestAnimationFrame(() => {
-        slider.style.scrollBehavior = "";
-        slider.style.scrollSnapType = "";
-      });
-    }
-  };
-
-  const handleScroll = () => {
-    window.clearTimeout(scrollEndTimerRef.current);
-    scrollEndTimerRef.current = window.setTimeout(resetLoopPosition, 350);
-  };
-
-  const handleTouchStart = () => {
-    window.clearTimeout(scrollEndTimerRef.current);
-    setIsPaused(true);
-  };
-
-  const handleTouchEnd = () => {
-    window.clearTimeout(scrollEndTimerRef.current);
-    scrollEndTimerRef.current = window.setTimeout(() => {
-      resetLoopPosition();
-      setIsPaused(false);
-    }, 500);
-  };
-
-  // Auto-rotate carousel on all screen sizes
-  useEffect(() => {
-    if (isPaused) return;
-
-    const autoScroll = setInterval(() => {
-      const slider = sliderRef.current;
-      if (!slider) return;
-
-      resetLoopPosition();
-      requestAnimationFrame(() => {
-        slider.scrollBy({ left: getScrollStep(), behavior: "smooth" });
-      });
-    }, 3000);
-
-    return () => {
-      clearInterval(autoScroll);
-      window.clearTimeout(scrollEndTimerRef.current);
-    };
-  }, [isPaused]);
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 
   return (
     <>
@@ -297,11 +196,7 @@ const Repro = () => {
         <h2 className="text-lg sm:text-xl md:text-[25px] font-semibold px-4">
           High-End Testing
         </h2>
-<<<<<<< HEAD
         <p className="text-sm sm:text-base md:text-lg opacity-90 px-4 mt-0.5 leading-relaxed">
-=======
-        <p className="text-sm sm:text-[15px] md:text-lg lg:text-[20px] opacity-90 px-4 mt-0.5">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           Our comprehensive range of next-generation genetic tests.
         </p>
       </div>
@@ -317,7 +212,6 @@ const Repro = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
 
-<<<<<<< HEAD
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <div className="relative">
             {/* 🔹 Cards — KEY FIX: w-[75vw] on mobile instead of min-w */}
@@ -344,34 +238,6 @@ const Repro = () => {
             </div>
           </div>
         </div>
-=======
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="relative">
-            {/* 🔹 Cards — KEY FIX: w-[75vw] on mobile instead of min-w */}
-            <div
-              ref={sliderRef}
-              onScroll={handleScroll}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-              onTouchCancel={handleTouchEnd}
-              className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2"
-            >
-              {[...cards, ...cards].map((card, index) => (
-                <div
-                  key={`${card.title}-${index}`}
-                  // ✅ Fixed pixel width — not relative to parent
-                  style={{ width: "260px", minWidth: "260px" }}
-                  className="md:min-w-[320px] md:w-[320px] lg:min-w-[350px] lg:w-[350px] flex-shrink-0 snap-start"
-                >
-                  <ServiceCard card={card} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
       </div>
 
       {/* 🔹 Bottom Strip */}
@@ -380,8 +246,4 @@ const Repro = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Repro;
-=======
-export default Repro;
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1

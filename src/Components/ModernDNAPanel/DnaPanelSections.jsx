@@ -28,11 +28,7 @@ const DnaPanelSections = () => {
 
         <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Wellness Test
             </span>
             <br />
@@ -42,11 +38,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Fitness Test
             </span>
             <br />
@@ -57,11 +49,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Weight Loss Test
             </span>
             <br />
@@ -72,11 +60,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Nutrition Test
             </span>
             <br />
@@ -87,11 +71,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Skin Test
             </span>
             <br />
@@ -101,11 +81,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Sleep Test
             </span>
             <br />
@@ -130,11 +106,7 @@ const DnaPanelSections = () => {
 
         <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern-PRS Panel (Polygenic Risk Score)
             </span>
             <br />
@@ -145,11 +117,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA CardioMet Test
             </span>
             <br />
@@ -159,11 +127,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Diabetic Risk Panel
             </span>
             <br />
@@ -180,11 +144,7 @@ const DnaPanelSections = () => {
 
         <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8 mb-8 sm:mb-10">
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Kidney Test
             </span>
             <br />
@@ -194,11 +154,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Immunity Test
             </span>
             <br />
@@ -208,11 +164,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Autoimmunity Test
             </span>
             <br />
@@ -222,11 +174,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Women&apos;s Health Test
             </span>
             <br />
@@ -236,11 +184,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern DNA Men&apos;s Health Test
             </span>
             <br />
@@ -262,11 +206,7 @@ const DnaPanelSections = () => {
 
         <div className="space-y-5 sm:space-y-6 text-sm sm:text-base md:text-lg leading-7 md:leading-8">
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern EpiAge Test
             </span>
             <br />
@@ -277,11 +217,7 @@ const DnaPanelSections = () => {
           </p>
 
           <p>
-<<<<<<< HEAD
             <span className="font-semibold text-[#005C96] text-base md:text-lg">
-=======
-            <span className="font-semibold text-[#005C96] text-lg md:text-xl">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Modern Telomere Test
             </span>
             <br />

@@ -57,17 +57,10 @@ const MediaGallery = () => (
         <span className="text-sm font-medium text-[#15AEE5] sm:text-base">
           INSIDE MDRC
         </span>
-<<<<<<< HEAD
         <h2 className="mt-1 text-xl font-semibold text-[#005C96] sm:text-2xl md:text-[25px]">
           Media & Gallery
         </h2>
         <p className="mt-2 text-sm sm:text-base md:text-lg text-[#424040] leading-relaxed">
-=======
-        <h2 className="mt-1 text-xl font-bold text-[#005C96] sm:text-2xl md:text-[28px] lg:text-[32px]">
-          Media & Gallery
-        </h2>
-        <p className="mt-2 text-sm font-medium text-[#424040] sm:text-base md:text-lg lg:text-[20px]">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           Showcasing Care, Compassion and Clinical Excellence
         </p>
       </div>

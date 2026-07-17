@@ -24,7 +24,6 @@ const Disease = () => {
 </h2>
 
           <p className="font-bold text-white md:text-gray-700 mb-4 mt-2">
-<<<<<<< HEAD
             Etiological Diversity and Laboratory Diagnosis
           </p>
 
@@ -54,19 +53,6 @@ const Disease = () => {
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6">
             To diagnose infective agent in critically ill patients and to diagnose
             causative agent for persistent fever.
-=======
-            Comprehensive Microbiological and Molecular Diagnostics
-          </p>
-
-          <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6">
-            Infectious disease diagnostics involves identification of bacterial, viral,
-            fungal, and parasitic pathogens using microbiological culture, serological
-            assays, and molecular techniques. Advanced methods such as PCR and antigen
-            detection enable rapid and accurate detection of pathogens and antimicrobial
-            resistance markers. Timely diagnosis supports targeted therapy, infection
-            control, and effective clinical management, improving patient outcomes and
-            reducing transmission risk.
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           </p>
 
         </div>

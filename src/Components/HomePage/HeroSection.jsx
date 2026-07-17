@@ -41,11 +41,7 @@ const HeroSection = () => {
               <span className="text-[#0ECE91]">Better Health</span>
             </h1>
 
-<<<<<<< HEAD
             <p className="mb-3 text-sm sm:text-base md:text-lg leading-relaxed">
-=======
-            <p className="mb-3 text-base sm:mb-4 sm:text-lg">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               MDRC India&apos;s Genetic Division delivers advanced molecular
               diagnostics.
             </p>

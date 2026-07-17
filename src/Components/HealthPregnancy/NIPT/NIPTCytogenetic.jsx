@@ -48,7 +48,6 @@ const NIPTCytogenetic = () => {
             carries no risk of miscarriage.
           </p>
         </div>
-<<<<<<< HEAD
 
         <div className="bg-white/10 md:bg-gray-50 rounded-xl p-5 sm:p-6 md:p-8 border border-white/20 md:border-gray-100 mt-6">
           <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white md:text-gray-800 mb-4">
@@ -79,8 +78,6 @@ const NIPTCytogenetic = () => {
             fetal diagnostic testing as advised by the treating clinician.
           </p>
         </div>
-=======
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
       </div>
     </section>
   );

@@ -24,14 +24,10 @@ import Microarray from "./Components/HealthPregnancy/Microarray/Microarray";
 import NewbornScreening from "./Components/HealthPregnancy/NewbornScreening/NewbornScreening";
 import Tms from "./Components/TMS/Tms";
 import ModernDNAPanel from "./Components/ModernDNAPanel/ModernDNAPanel";
-<<<<<<< HEAD
 import MicroarrayPanel from "./Components/ModernDNAPanel/MicroarrayPanel/MicroarrayPanel";
 import NGSPanel from "./Components/ModernDNAPanel/NGSPanel/NGSPanel";
 import MetabolomicsServices from "./Components/MetabolomicsServices/MetabolomicsServices";
 import LongevityPanel from "./Components/MetabolomicsServices/LongevityPanel/LongevityPanel";
-=======
-import MetabolomicsServices from "./Components/MetabolomicsServices/MetabolomicsServices";
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 import SpectrumofInfectiousDiseases from "./Components/Infectious Disease/SpectrumofInfectiousDiseases/SpectrumofInfectiousDiseases";
 import PopupForm from "./Components/PopupForm";
 import ImmunoSuppression from "./Components/Infectious Disease/ImmunoSuppression/ImmunoSuppression";
@@ -53,10 +49,7 @@ import ChorionicVillusSamplingFeverPanel from "./Components/Cytogenetic and FISH
 import FetalConception from "./Components/Cytogenetic and FISH/Fetal Blood and Products of Conception/FetalConception";
 import BloodCultureKaryotyping from "./Components/Cytogenetic and FISH/Blood Culture and Karyotyping/BloodCultureKaryotyping";
 import HighResolutionBanding from "./Components/Cytogenetic and FISH/High Resolution Banding/HighResolutionBanding";
-<<<<<<< HEAD
-=======
 import FragileXandDNAStudies from "./Components/Cytogenetic and FISH/Fragile X and DNA Studies/FragileXandDNAStudies";
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 import NeurologicalDisorders from "./Components/Rare NGS Panel/Neurological Disorders/NeurologicalDisorders";
 import PediatricGeneticDisorders from "./Components/Rare NGS Panel/Pediatric Genetic Disorders/PediatricGeneticDisorders";
 import MetabolicDisorders from "./Components/Rare NGS Panel/Metabolic Disorders/MetabolicDisorders";
@@ -73,11 +66,8 @@ import WarfarinPharmacogenomics from "./Components/Pharmacogenomics/Warfarin Pha
 import StatinPharmacogenomics from "./Components/Pharmacogenomics/Statin Pharmacogenomics/StatinPharmacogenomics";
 import ThiopurineMethotrexatePharmacogenomics from "./Components/Pharmacogenomics/Thiopurine and Methotrexate Pharmacogenomics/ThiopurineMethotrexatePharmacogenomics";
 import ClopidogrelPharmacogenomics from "./Components/Pharmacogenomics/Clopidogrel Pharmacogenomics/ClopidogrelPharmacogenomics";
-<<<<<<< HEAD
-=======
 import WholeGenomeSequencing from "./Components/AdvancedSequencing/Whole Genome Sequencing (WGS)/WholeGenomeSequencing";
 import WholeExomeSequencing from "./Components/AdvancedSequencing/Whole Exome Sequencing (WES)/WholeExomeSequencing";
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 import TargetedPanelSequencing from "./Components/AdvancedSequencing/Targeted Gene Panel Sequencing/TargetedPanelSequencing";
 import RNASequencing from "./Components/AdvancedSequencing/RNA Sequencing/RNASequencing";
 import LongReadSequencing from "./Components/AdvancedSequencing/Long-Read Sequencing/LongReadSequencing";
@@ -135,14 +125,10 @@ function App() {
           <Route path="/services/advanced-Sequencing" element={<AdvancedSequencing />} />
           <Route path="/services/tandem-mass-spectrometry-tms" element={<Tms />} />
           <Route path="/services/modern-dna-panels" element={<ModernDNAPanel />} />
-<<<<<<< HEAD
           <Route path="/services/modern-dna-panels/microarray" element={<MicroarrayPanel />} />
           <Route path="/services/modern-dna-panels/ngs-panels" element={<NGSPanel />} />
           <Route path="/services/metabolomics-services" element={<MetabolomicsServices />} />
           <Route path="/services/metabolomics-services/longevity-panel" element={<LongevityPanel />} />
-=======
-          <Route path="/services/metabolomics-services" element={<MetabolomicsServices />} />
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/terms-and-conditions" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -170,10 +156,7 @@ function App() {
           <Route path="/service/fetalconception" element={<FetalConception/>} />
           <Route path="/service/bloodculturekaryotyping" element={<BloodCultureKaryotyping/>} />
           <Route path="/service/highresolutionbanding" element={<HighResolutionBanding/>} />
-<<<<<<< HEAD
-=======
           <Route path="/service/fragilexanddnastudies" element={<FragileXandDNAStudies/>} />
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 
 
 
@@ -202,11 +185,8 @@ function App() {
           <Route path="/service/clopidogrel/pharmacogenomics" element={<ClopidogrelPharmacogenomics/>} />
 
 
-<<<<<<< HEAD
-=======
           <Route path="/servicewholegenomesequencing" element={<WholeGenomeSequencing/>} />
           <Route path="/service/wholeexomesequencing" element={<WholeExomeSequencing/>} />
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           <Route path="/service/targetedpanelsequencing" element={<TargetedPanelSequencing/>} />
           <Route path="/service/rnasequencing" element={<RNASequencing/>} />
           <Route path="/service/longreadsequencing" element={<LongReadSequencing/>} />

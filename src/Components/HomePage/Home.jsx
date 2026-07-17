@@ -48,38 +48,22 @@ const Home = () => (
 
         {/* CONTENT */}
         <div className="flex flex-col gap-1 order-1 md:order-2">
-<<<<<<< HEAD
           <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-[#424040]">
             Genomics & Molecular Division
           </h2>
 
           <p className="text-[#424040] text-sm sm:text-base md:text-lg leading-relaxed">
-=======
-          <h2 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold text-[#424040]">
-            Genomics & Molecular Division
-          </h2>
-
-          <p className="text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
             <strong>Genomics</strong> is the cornerstone of precision medicine, moving diagnostics from reactive treatment to proactive prevention. By analyzing an individual’s unique {" "}
             <strong>genetic architecture</strong>
             we can identify molecular markers that traditional pathology often overlooks or is unable to determine
           </p>
 
-<<<<<<< HEAD
           <p className="mt-1.5 text-[#424040] text-sm sm:text-base md:text-lg leading-relaxed">
-=======
-          <p className="mt-1.5 text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
             Our topline QTof LC-MS/MS system can identify very minute quantities of metabolites up to picogram level and this helps in certain disease conditions that can not be identified by other means.
           </p>
 
 
-<<<<<<< HEAD
          <p className="mt-1.5 text-[#424040] text-sm sm:text-base md:text-lg leading-relaxed">
-=======
-         <p className="mt-1.5 text-[#424040] text-sm sm:text-[15px] md:text-[16px] lg:text-[18px] font-medium leading-relaxed">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
             This data-driven approach allows for the
             <strong> detection of hereditary predispositions </strong>, the diagnosis of complex rare diseases, and the optimization of therapeutic interventions based on an individual's specific biological makeup.
           </p>
@@ -90,11 +74,7 @@ const Home = () => (
 
           {/* BUTTON */}
           <Link to={"/about"}>
-<<<<<<< HEAD
             <button className="cursor-pointer mt-4 w-max bg-gradient-to-r from-[#05AF79] to-[#0ECE91] text-white text-sm sm:text-base px-4 sm:px-5 md:px-6 py-2 md:py-2.5 rounded-lg hover:opacity-90 transition">
-=======
-            <button className="cursor-pointer mt-4 w-max bg-gradient-to-r from-[#05AF79] to-[#0ECE91] text-white text-sm sm:text-base md:text-lg px-4 sm:px-5 md:px-6 py-2 md:py-2.5 rounded-lg hover:opacity-90 transition">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               KNOW MORE ABOUT MDRC GENOMICS
             </button>
           </Link>

@@ -24,19 +24,11 @@ function Nationwide() {
     <section className="py-4 sm:py-5 md:py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
         
-<<<<<<< HEAD
         <h2 className="text-sm sm:text-base font-medium text-[#15AEE5] mb-1 sm:mb-2">
           WHY MDRC
         </h2>
 
         <h3 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-[#005C96] mb-5 sm:mb-6 md:mb-8">
-=======
-        <h2 className="text-sm sm:text-base md:text-lg lg:text-[20px] font-medium text-[#15AEE5] mb-1 sm:mb-2">
-          WHY MDRC
-        </h2>
-
-        <h3 className="text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold text-[#005C96] mb-5 sm:mb-6 md:mb-8">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           Trusted by Clinicians Nationwide
         </h3>
 
@@ -54,17 +46,10 @@ function Nationwide() {
               />
               </div>
 
-<<<<<<< HEAD
               <h4 className="text-base md:text-lg font-semibold text-[#1160A5] mb-1 sm:mb-2">
                 {item.title}
               </h4>
               <p className="text-[#727070] text-sm sm:text-base md:text-lg leading-relaxed px-2 sm:px-0">
-=======
-              <h4 className="text-base sm:text-lg lg:text-[20px] font-semibold text-[#1160A5] mb-1 sm:mb-2">
-                {item.title}
-              </h4>
-              <p className="text-[#727070] text-sm sm:text-[15px] lg:text-[16px] px-2 sm:px-0">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                 {item.desc}
               </p>
             </div>

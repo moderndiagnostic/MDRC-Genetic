@@ -8,7 +8,6 @@ const ClopidogrelPharmacogenomicsSection = () => {
         
         {/* Section 1 */}
         <div className="mb-10">
-<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Key Diagnostic Evaluations
           </div>
@@ -17,16 +16,6 @@ const ClopidogrelPharmacogenomicsSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
-            Key Diagnostic Evaluations
-          </div>
-
-          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-            
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>CYP2C19 Genotyping</b> – Detects variants affecting Clopidogrel metabolism and therapeutic response.
 
@@ -35,11 +24,7 @@ const ClopidogrelPharmacogenomicsSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Pharmacogenomic Interpretation </b> –   Integrates genetic findings with clinical context for individualized therapy.
 
@@ -49,11 +34,7 @@ const ClopidogrelPharmacogenomicsSection = () => {
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Risk Assessment</b> –  Identifies patients at increased risk of suboptimal response or cardiovascular complications
 
@@ -65,7 +46,6 @@ const ClopidogrelPharmacogenomicsSection = () => {
 
         {/* Section 2 */}
         <div>
-<<<<<<< HEAD
           <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-base md:text-lg">
             Clinical Applications
           </div>
@@ -74,16 +54,6 @@ const ClopidogrelPharmacogenomicsSection = () => {
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-          <div className="inline-block bg-gradient-to-b from-[#005C96] to-[#15AEE5] text-white px-6 py-2 rounded-lg font-semibold shadow text-lg">
-            Clinical Applications
-          </div>
-
-          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-            
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Enables personalized antiplatelet therapy for cardiovascular patients.
 
@@ -92,11 +62,7 @@ Enables personalized antiplatelet therapy for cardiovascular patients.
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Guides selection of alternative drugs or adjusted dosing for poor metabolizers.
 
@@ -104,22 +70,14 @@ Guides selection of alternative drugs or adjusted dosing for poor metabolizers.
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Reduces risk of thrombotic events and enhances therapy efficacy.
        </p>
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Supports precision medicine in cardiovascular care and long-term management.
 </p>

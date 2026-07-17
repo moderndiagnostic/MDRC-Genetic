@@ -15,17 +15,10 @@ const WholeExomeSequencingSection = () => {
 
         </h2>
 
-<<<<<<< HEAD
           <ul className="mt-5 space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-            
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Target Region</b> –  ~20,000 genes (exons and splice sites)
 
@@ -33,11 +26,7 @@ const WholeExomeSequencingSection = () => {
             </li>
 
             {/* <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Variant Detection</b>
                 <ul>
@@ -55,11 +44,7 @@ const WholeExomeSequencingSection = () => {
             </li> */}
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Coverage Depth</b> –  ≥100× mean depth
 
@@ -68,11 +53,7 @@ const WholeExomeSequencingSection = () => {
               </p>
             </li>
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Variant Detection</b> –  SNVs, indels, and exon-level CNVs
 
@@ -82,11 +63,7 @@ const WholeExomeSequencingSection = () => {
               </p>
             </li>
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
                 <b>Enrichment Method</b> –  Hybrid capture-based target enrichment
 
@@ -109,17 +86,10 @@ const WholeExomeSequencingSection = () => {
 
         </h2>
 
-<<<<<<< HEAD
           <ul className="mt-5 space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
             
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-          <ul className="mt-5 space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
-            
-            <li className="flex items-start gap-3">
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Pediatric and adult rare genetic disorders
 
@@ -128,11 +98,7 @@ Pediatric and adult rare genetic disorders
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Neurodevelopmental and intellectual disabilities
 
@@ -140,33 +106,21 @@ Neurodevelopmental and intellectual disabilities
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Epilepsy and neuromuscular disorders
        </p>
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Metabolic and syndromic conditions
 </p>
             </li>
 
             <li className="flex items-start gap-3">
-<<<<<<< HEAD
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-=======
-              <span className="text-green-500 mt-1 text-xl">•</span>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               <p>
 Trio-based analysis for de novo variant detection
 

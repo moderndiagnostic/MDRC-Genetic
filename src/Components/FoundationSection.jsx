@@ -42,17 +42,10 @@ const FoundationSection = () => {
 
           {/* Heading */}
           <div className="text-center mb-4 md:mb-5">
-<<<<<<< HEAD
             <h2 className="text-xl sm:text-2xl md:text-[25px] font-semibold text-[#005c96]">
               Our Foundation of Trust
             </h2>
             <p className="text-gray-600 text-sm sm:text-base md:text-lg mt-1 leading-relaxed">
-=======
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#005c96]">
-              Our Foundation of Trust
-            </h2>
-            <p className="text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg mt-1">
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               Decades of experience & A network of certified labs.
             </p>
           </div>
@@ -64,17 +57,10 @@ const FoundationSection = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
               <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827843/vite-project/qaajs5qrdc1cgsnh4lqb.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
               <div>
-<<<<<<< HEAD
                 <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
                   NABH & NABL
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base">Certified Labs</p>
-=======
-                <h3 className="text-[#1e88c8] font-semibold text-lg md:text-2xl">
-                  NABH & NABL
-                </h3>
-                <p className="text-gray-600 text-xs md:text-base">Certified Labs</p>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </div>
             </div>
 
@@ -82,17 +68,10 @@ const FoundationSection = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
               <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827846/vite-project/lvwxyse50n74x769qyxv.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
               <div>
-<<<<<<< HEAD
                 <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
                   <Counter end={40} suffix="+" />
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base">Years Of Experience</p>
-=======
-                <h3 className="text-[#1e88c8] font-semibold text-lg md:text-2xl">
-                  <Counter end={40} suffix="+" />
-                </h3>
-                <p className="text-gray-600 text-xs md:text-base">Years Of Experience</p>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </div>
             </div>
 
@@ -100,17 +79,10 @@ const FoundationSection = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
               <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827850/vite-project/xacfm0sqfiqaihvxib37.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
               <div>
-<<<<<<< HEAD
                 <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
                   <Counter end={25} suffix="+" />
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base">Labs in India</p>
-=======
-                <h3 className="text-[#1e88c8] font-semibold text-lg md:text-2xl">
-                  <Counter end={25} suffix="+" />
-                </h3>
-                <p className="text-gray-600 text-xs md:text-base">Labs in India</p>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </div>
             </div>
 
@@ -118,17 +90,10 @@ const FoundationSection = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
               <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827848/vite-project/ql0shvzjflyue2llzgla.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
               <div>
-<<<<<<< HEAD
                 <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
                   <Counter end={150} suffix="K+" />
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base">Satisfied Customers</p>
-=======
-                <h3 className="text-[#1e88c8] font-semibold text-lg md:text-2xl">
-                  <Counter end={150} suffix="K+" />
-                </h3>
-                <p className="text-gray-600 text-xs md:text-base">Satisfied Customers</p>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </div>
             </div>
 

@@ -1,194 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import { Menu, X, ChevronDown, Home } from "lucide-react";
 import PopupForm from "../PopupForm";
 import SiteSearch from "./SiteSearch";
 import { navLinks } from "./navLinks";
-=======
-import { Menu, X, ChevronDown } from "lucide-react";
-import PopupForm from "../PopupForm";
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 
 const logo =
   "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827827/vite-project/vgzwrlq8snrlmmgcsr1l.webp";
 
-<<<<<<< HEAD
-=======
-  const navLinks = [
-      { label: "Home", path: "/" },
-      { label: "About MDRC Genomics", path: "/about" },
-      { label: "Modern DNA Panels", path: "/services/modern-dna-panels" },
-      {
-        label: "Metabolomics Services",
-        path: "/services/metabolomics-services",
-        dropdown: [
-          {
-            label: "Longevity Panels",
-            path: "#",
-            dropdown: [
-              { label: "Methylation Status Analysis", path: "#" },
-              { label: "Omega-3 : Omega-6 Fatty Acid Ratio", path: "#" },
-              { label: "NAD+ / NADH Ratio", path: "#" },
-              { label: "GSH / GSSG Ratio", path: "#" },
-            ],
-          },
-
-          {
-            label: "Gut Microbiome Health Assessment Panel",
-            path: "#",
-          },
-
-          
-          {
-            label: "Neurotransmitter and Catecholamine Assessment",
-            path: "#",
-          },
-          { label: "Autism Assessment Panel", path: "#" },
-          { label: "Depression Assessment Panel", path: "#" },
-          {
-            label: "Complete Fat and Water-Soluble Vitamin Panel",
-            path: "#",
-          },
-          {
-            label: "High Precision Assessment of Vitamin D Status",
-            path: "#",
-          },
-          {
-            label: "New Born Screening for Errors of Metabolism",
-            path: "#",
-          },
-          { label: "Confirmation of Errors of Metabolism", path: "#" },
-          { label: "Therapeutic Drug Monitoring", path: "#" },
-          { label: "Drugs of Abuse Levels", path: "#" },
-        ],
-      },
-      {
-        label: "Genomic Services",
-        path: "/genomic-services",
-        dropdown: [
-           {
-            label: "Oncology",
-            path: "/services/oncologygenomics",
-            dropdown: [
-              { label: "Comprehensive Genomic Profiling (CGP)", path: "/service/comprehensivegenomicprofiling" },
-              { label: "Targeted Solid Tumor Gene Panels", path: "/service/targetedsolidtumorpanels" },
-              { label: "Hematological Malignancy Genomics", path: "/service/hematologicalmalignancygenomics" },
-              { label: "Liquid Biopsy (ctDNA Analysis)", path: "/service/liquidbiopsy" },
-              { label: "Hereditary Cancer Genomics (Germline Testing)", path: "/service/hereditarycancergenomics" },
-              { label: "RNA Sequencing for Fusion Detection", path: "/service/rnasequencingforfusion" },
-              
-            ],
-          },
-
-          
-          {
-
-
-            label: "Infectious Disease",
-            path: "/services/infectious-Disease",
-            dropdown: [
-              { label: "Spectrum of Infectious Diseases", path: "/service/gastro" },
-              { label: "Immuno Suppression", path: "/service/immunosuppression" },
-              { label: "Respiratory Panel ", path: "/service/respiratorypanel" },
-              { label: "Gastrointestinal Panel ", path: "/service/gastrointestinapanel" },
-              { label: "Influenza Panel", path: "/service/influenzapanel" },
-              { label: "Tropical Fever Panel", path: "/service/tropicalfeverpanel" },
-              { label: "TORCH PCR", path: "/service/torchpcrfeverpanel" },
-              { label: "STD / Urethritis Panel", path: "/service/stdurethritispanelfeverpanel" },
-              { label: "Swine Flu (H1N1)", path: "/service/swineflufever" },
-              { label: "Meningitis Panel", path: "/service/meningitispanel" },
-            ],
-          },
-          {
-            label: "Reproductive Health & Pregnancy",
-            path: "/services/reproductive-health-pregnancy",
-            dropdown: [
-              { label: "Infertility Genetics", path: "/services/infertility-genetics" },
-              { label: "Carrier Screening", path: "/services/carrier-screening" },
-              { label: "Non-Invasive Prenatal Testing (NIPT)", path: "/reproductive-health-pregnancy/services/nipt" },
-              { label: "Newborn Screening", path: "/reproductive-health-pregnancy/newbornscreening" },
-              { label: "Microarray", path: "/reproductive-health-pregnancy/services/microarray" },
-              
-            ],
-          },
-          {
-            label: "Cytogenetics and FISH",
-            path: "/services/cyto-genetic-and-fish",
-            dropdown: [
-              { label: "Amniocentesis", path: "/service/amniocentesis" },
-              { label: "Chorionic Villus Sampling (CVS)", path: "/service/chorionicvillussamplingfeverpanel" },
-              { label: "Fetal Blood and Products of Conception", path: "/service/fetalconception" },
-              { label: "Blood Culture and Karyotyping", path: "/service/bloodculturekaryotyping" },
-              { label: "High Resolution Banding", path: "/service/highresolutionbanding" },
-
-              
-            ],
-          },
-          {
-            label: "Rare Diseases NGS panel",
-            path: "/services/rare-nGS-panel",
-            dropdown: [
-              { label: "Neurological Disorders", path: "/service/neurologicaldisorders" },
-              { label: "Pediatric Genetic Disorders", path: "/service/pediatricgeneticgisorders" },
-              { label: "Metabolic Disorders", path: "/service/metabolicdisorders" },
-              { label: "Cardiogenetic Disorders", path: "/service/cardiogeneticdisorders" },
-              { label: "Skeletal Disorders", path: "/service/skeletaldisorders" },
-              { label: "Ophthalmic Genetic Disorders", path: "/service/ophthalmicgeneticdisorders" },
-              { label: "Renal Genetic Disorders", path: "/service/renalgeneticdisorders" },
-              { label: "Hematological Genetic Disorders", path: "/service/hematologicalgeneticdisorders" },
-              { label: "Immunological Disorders", path: "/service/immunologicaldisorders" },
-              // { label: "Oncogenetics", path: "/service/oncogeneticsdisorders" },
-              
-            ],
-          },
-          {
-            label: "Whole Exome & Whole Genome",
-            path: "/services/whole-exome-and-genome-Sequencing",
-            dropdown: [
-              { label: "Genome Sequencing", path: "/service/genomesequencing" },
-              { label: "Exome Sequencing", path: "/service/exomesequencing" },
-              
-            ],
-          },
-          {
-            label: "Pharmacogenomics",
-            path: "/services/pharmacogenomics",
-            dropdown: [
-              { label: "Warfarin Pharmacogenomics", path: "/service/warfarinpharmacogenomics" },
-              { label: "Statin Pharmacogenomics", path: "/service/statinpharmacogenomics" },
-              { label: "Thiopurine and Methotrexate Pharmacogenomics", path: "/service/thiopurine/methotrexate/pharmacogenomics" },
-              { label: "Clopidogrel Pharmacogenomics", path: "/service/clopidogrel/pharmacogenomics" },
-              
-            ],
-          },
-          {
-            label: "Advanced Sequencing",
-            path: "/services/advanced-Sequencing",
-            dropdown: [
-              { label: "Whole Genome Sequencing (WGS)", path: "/servicewholegenomesequencing" },
-              { label: "Whole Exome Sequencing (WES)", path: "/service/wholeexomesequencing" },
-              { label: "Targeted Gene Panel Sequencing", path: "/service/targetedpanelsequencing" },
-              { label: "RNA Sequencing (RNA-Seq / Transcriptome Analysis)", path: "/service/rnasequencing" },
-              { label: "Long-Read Sequencing", path: "/service/longreadsequencing" },
-              { label: "Metagenomic Next-Generation Sequencing (mNGS)", path: "/service/metagenomicgenerationsequencing" },
-              
-            ],
-          },
-         
-         ],
-      },
-      {
-        label: "Contact Us",
-        path: "/contact",
-        dropdown: [
-          { label: "Contact Us", path: "/contact" },
-          { label: "Blog", path: "/blogs" },
-        ],
-      },
-    ];
-
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
   const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [openMain, setOpenMain] = useState(null);
@@ -215,20 +34,12 @@ const logo =
         <div className="h-12 bg-gray-100 flex items-center px-4 gap-4">
           <img
             src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828018/vite-project/xj4xw61kf7ppx5ovzv5w.svg"
-<<<<<<< HEAD
             className="h-6 shrink-0"
-=======
-            className="h-6"
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           />
 
           <img
             src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828063/vite-project/sdx6ru1wht1omol4ghkh.svg"
-<<<<<<< HEAD
             className="h-6 shrink-0"
-=======
-            className="h-6"
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
           />
         </div>
 
@@ -251,17 +62,13 @@ const logo =
                   {!link.dropdown ? (
                     <Link
                       to={link.path}
-<<<<<<< HEAD
                       aria-label={link.path === "/" ? "Home" : undefined}
                       title={link.path === "/" ? "Home" : undefined}
-=======
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                       className={`block whitespace-nowrap px-2 2xl:px-3 py-2 rounded font-semibold ${
                         location.pathname === link.path &&
                         navLinks.findIndex((item) => item.path === location.pathname) === index
                           ? "bg-gray-100"
                           : "hover:bg-gray-50"
-<<<<<<< HEAD
                       } ${link.path === "/" ? "flex items-center justify-center" : ""}`}
                     >
                       {link.path === "/" ? (
@@ -274,15 +81,6 @@ const logo =
                     <>
                       {link.label === "Metabolomics Services" ||
                       link.label === "Modern DNA Panels" ? (
-=======
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
-                  ) : (
-                    <>
-                      {link.label === "Metabolomics Services" ? (
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                         <Link
                           to={link.path}
                           className="flex items-center gap-1 whitespace-nowrap px-2 2xl:px-3 py-2 hover:text-primary"
@@ -391,7 +189,6 @@ const logo =
                 </div>
               ))}
 
-<<<<<<< HEAD
               <SiteSearch
                 variant="navbar"
                 onNavigate={() => setIsOpen(false)}
@@ -404,14 +201,6 @@ const logo =
                 className="
                   bg-[#005E91]
                   hover:bg-[#004E7A]
-=======
-              {/* BOOK YOUR TEST BUTTON */}
-              <button
-                onClick={() => setShowPopup(true)}
-                className="
-                  bg-green-500
-                  hover:bg-green-600
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                   text-white
                   px-4
                   2xl:px-6
@@ -428,16 +217,11 @@ const logo =
                   gap-2
                 "
               >
-<<<<<<< HEAD
                 Book Tests
-=======
-                Book Your Test
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </button>
 
             </div>
 
-<<<<<<< HEAD
             <div className="flex items-center gap-2 shrink-0 xl:hidden">
               <SiteSearch
                 variant="navbar"
@@ -452,15 +236,6 @@ const logo =
                 {isOpen ? <X /> : <Menu />}
               </button>
             </div>
-=======
-            {/* Mobile Toggle */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="xl:hidden"
-            >
-              {isOpen ? <X /> : <Menu />}
-            </button>
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
 
           </div>
         </div>
@@ -478,7 +253,6 @@ const logo =
                     <Link
                       to={link.path}
                       onClick={() => setIsOpen(false)}
-<<<<<<< HEAD
                       aria-label={link.path === "/" ? "Home" : undefined}
                       title={link.path === "/" ? "Home" : undefined}
                       className={`block px-3 py-3 hover:bg-gray-50 rounded-lg ${
@@ -493,11 +267,6 @@ const logo =
                       ) : (
                         link.label
                       )}
-=======
-                      className="block px-3 py-3 hover:bg-gray-50 rounded-lg"
-                    >
-                      {link.label}
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                     </Link>
                   ) : (
                     <>
@@ -596,13 +365,8 @@ const logo =
                 onClick={() => setShowPopup(true)}
                 className="
                   mt-4
-<<<<<<< HEAD
                   bg-[#005E91]
                   hover:bg-[#004E7A]
-=======
-                  bg-green-500
-                  hover:bg-green-600
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
                   text-white
                   py-3
                   text-center
@@ -613,11 +377,7 @@ const logo =
                   duration-300
                 "
               >
-<<<<<<< HEAD
                 Book Tests
-=======
-                Book Your Test
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
               </button>
 
             </div>

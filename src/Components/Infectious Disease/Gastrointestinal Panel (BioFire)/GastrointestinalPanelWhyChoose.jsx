@@ -3,11 +3,7 @@ import React from "react";
 const GastrointestinalPanelWhyChoose = () => {
   const items = [
     {
-<<<<<<< HEAD
       text: "Advanced multiplex PCR technology",
-=======
-      text: "BioFire multiplex PCR technology",
->>>>>>> dfcb555ac04c72e4bac571defe511b797624b2e1
       img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827860/vite-project/pg5fgeexuuhnn24qdxzi.svg",
     },
     {
