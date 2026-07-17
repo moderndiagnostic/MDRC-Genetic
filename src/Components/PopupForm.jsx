@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   X,
@@ -66,11 +66,10 @@ const PopupForm = ({ isOpen, onClose }) => {
   const [submitted, setSubmitted] = useState(false);
   const [acceptedTerms, setAcceptedTerms] = useState(true);
 
-  useEffect(() => {
-    if (isOpen) {
-      setAcceptedTerms(true);
-    }
-  }, [isOpen]);
+  const handleClose = useCallback(() => {
+    setAcceptedTerms(true);
+    onClose();
+  }, [onClose]);
 
   useEffect(() => {
     if (isOpen) {
@@ -86,7 +85,7 @@ const PopupForm = ({ isOpen, onClose }) => {
 
   useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") handleClose();
     };
 
     if (isOpen) {
@@ -94,7 +93,7 @@ const PopupForm = ({ isOpen, onClose }) => {
     }
 
     return () => window.removeEventListener("keydown", handleEscape);
-  }, [isOpen, onClose]);
+  }, [isOpen, handleClose]);
 
   if (!isOpen) return null;
 
@@ -106,9 +105,8 @@ const PopupForm = ({ isOpen, onClose }) => {
 
     setTimeout(() => {
       setSubmitted(false);
-      onClose();
+      handleClose();
       setFormData({ name: "", phone: "", city: "", test: "", message: "" });
-      setAcceptedTerms(true);
     }, 2500);
   };
 
@@ -118,7 +116,7 @@ const PopupForm = ({ isOpen, onClose }) => {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-[#001E32]/70 px-3 py-4 backdrop-blur-sm sm:px-4 sm:py-6"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="relative flex w-full max-w-[min(980px,96vw)] max-h-[92vh] flex-col overflow-hidden rounded-2xl bg-white shadow-[0_25px_80px_rgba(0,0,0,0.35)] md:max-h-[90vh] md:flex-row md:items-stretch sm:rounded-3xl"
@@ -126,7 +124,7 @@ const PopupForm = ({ isOpen, onClose }) => {
       >
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleClose}
           aria-label="Close"
           className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-white/95 text-gray-600 shadow-md transition hover:bg-white hover:text-gray-900 sm:right-4 sm:top-4"
         >
@@ -134,7 +132,7 @@ const PopupForm = ({ isOpen, onClose }) => {
         </button>
 
         {/* IMAGE — full bleed in card */}
-        <div className="relative w-full shrink-0 overflow-hidden md:w-[48%] md:min-h-0">
+        <div className="relative hidden w-full shrink-0 overflow-hidden md:block md:w-[48%] md:min-h-0">
           <img
             src={POPUP_IMAGE}
             alt="Genetic testing consultation"

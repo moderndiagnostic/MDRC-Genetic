@@ -33,11 +33,11 @@ const logo =
         {/* Main Header */}
         <div className="w-full max-w-[1680px] mx-auto px-4 lg:px-6">
 
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 h-16 lg:h-[4.75rem]">
+          <div className="grid h-16 grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-3 lg:h-[4.75rem] xl:grid-cols-[1fr_auto_1fr]">
 
             {/* Left: Logo */}
             <Link to="/" className="shrink-0 justify-self-start">
-              <img src={logo} alt="MODERN Diagnostic & Research Centre" className="h-11 lg:h-14 w-auto" />
+              <img src={logo} alt="MODERN Diagnostic & Research Centre" className="h-10 w-auto sm:h-11 lg:h-14" />
             </Link>
 
             {/* Center: Nav links */}
@@ -201,7 +201,7 @@ const logo =
               </button>
             </div>
 
-            <div className="flex items-center gap-2.5 shrink-0 xl:hidden justify-self-end col-start-3">
+            <div className="col-start-3 flex shrink-0 items-center gap-2 justify-self-end xl:hidden">
               <SiteSearch
                 variant="navbar"
                 onNavigate={() => setIsOpen(false)}
@@ -211,7 +211,7 @@ const logo =
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label={isOpen ? "Close menu" : "Open menu"}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-700 hover:bg-gray-50 sm:h-10 sm:w-10"
               >
                 {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -222,9 +222,28 @@ const logo =
 
         {/* MOBILE MENU */}
         {isOpen && (
-          <div className="xl:hidden bg-white border-t border-gray-100">
+          <div className="fixed inset-x-0 bottom-0 top-[calc(2.25rem+4rem)] z-[55] lg:top-[calc(2.25rem+4.75rem)] xl:hidden">
+            <button
+              type="button"
+              aria-label="Close menu overlay"
+              className="absolute inset-0 bg-[#001E32]/45 backdrop-blur-[2px]"
+              onClick={() => setIsOpen(false)}
+            />
 
-            <div className="flex flex-col p-4 text-gray-700">
+            <aside className="relative ml-auto flex h-full w-[min(88vw,360px)] flex-col overflow-hidden border-l border-gray-100 bg-white shadow-[-18px_0_45px_rgba(15,23,42,0.18)]">
+              <div className="flex items-center justify-between border-b border-gray-100 px-4 py-3">
+                <span className="text-sm font-semibold text-[#005E91]">Menu</span>
+                <button
+                  type="button"
+                  onClick={() => setIsOpen(false)}
+                  aria-label="Close menu"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 text-gray-700"
+                >
+                  <X className="h-4.5 w-4.5" />
+                </button>
+              </div>
+
+            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto p-3 text-gray-700">
 
               {navLinks.map((link, index) => (
                 <div key={index}>
@@ -254,7 +273,7 @@ const logo =
                         onClick={() =>
                           setOpenMain(openMain === index ? null : index)
                         }
-                        className="w-full flex justify-between items-center px-3 py-3 font-medium"
+                        className="flex w-full items-center justify-between rounded-lg px-3 py-3 text-left font-medium hover:bg-gray-50"
                       >
                         {link.label}
 
@@ -266,7 +285,7 @@ const logo =
                       </button>
 
                       {openMain === index && (
-                        <div className="pl-4 border-l border-gray-100">
+                        <div className="ml-3 border-l border-gray-100 pl-3">
 
                       {link.dropdown.map((item, i) => (
   <div key={i}>
@@ -276,7 +295,8 @@ const logo =
         <div className="flex justify-between items-center">
           <Link
             to={item.path}
-            className="px-3 py-2 text-sm font-medium"
+            onClick={() => setIsOpen(false)}
+            className="min-w-0 flex-1 rounded-lg px-3 py-2 text-sm font-medium hover:bg-gray-50"
           >
             {item.label}
           </Link>
@@ -289,6 +309,8 @@ const logo =
                   : `${index}-${i}`
               )
             }
+            aria-label={`Toggle ${item.label}`}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full hover:bg-gray-50"
           >
             <ChevronDown
               className={`w-4 h-4 transition ${
@@ -301,7 +323,7 @@ const logo =
         </div>
 
         {openSub === `${index}-${i}` && (
-          <div className="pl-4 border-l border-gray-100 ml-2">
+          <div className="ml-2 border-l border-gray-100 pl-3">
 
 
             {item.dropdown.map((sub, j) => (
@@ -309,7 +331,7 @@ const logo =
                 key={j}
                 to={sub.path}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-1 text-sm hover:bg-gray-50 rounded font-medium"
+                className="block rounded px-3 py-2 text-sm font-medium leading-snug hover:bg-gray-50"
               >
                 {sub.label}
               </Link>
@@ -323,7 +345,7 @@ const logo =
       <Link
         to={item.path}
         onClick={() => setIsOpen(false)}
-        className="block px-3 py-2 text-sm hover:bg-gray-50 rounded"
+        className="block rounded-lg px-3 py-2 text-sm font-medium hover:bg-gray-50"
       >
         {item.label}
       </Link>
@@ -342,7 +364,10 @@ const logo =
 
               {/* MOBILE BUTTON */}
               <button
-                onClick={() => setShowPopup(true)}
+                onClick={() => {
+                  setIsOpen(false);
+                  setShowPopup(true);
+                }}
                 className="
                   mt-4
                   bg-[#005E91]
@@ -361,6 +386,7 @@ const logo =
               </button>
 
             </div>
+            </aside>
           </div>
         )}
       </nav>

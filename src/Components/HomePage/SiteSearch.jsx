@@ -32,10 +32,6 @@ const SiteSearch = ({ onNavigate, className = "", variant = "inline" }) => {
   };
 
   useEffect(() => {
-    setActiveIndex(0);
-  }, [query]);
-
-  useEffect(() => {
     const handleClickOutside = (event) => {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
         closeSearch();
@@ -108,6 +104,7 @@ const SiteSearch = ({ onNavigate, className = "", variant = "inline" }) => {
             value={query}
             onChange={(event) => {
               setQuery(event.target.value);
+              setActiveIndex(0);
               setIsOpen(true);
             }}
             onFocus={() => setIsOpen(true)}
@@ -143,13 +140,13 @@ const SiteSearch = ({ onNavigate, className = "", variant = "inline" }) => {
   }
 
   return (
-    <div ref={containerRef} className={`relative flex h-10 w-10 items-center justify-center ${className}`}>
+    <div ref={containerRef} className={`relative flex h-9 w-9 items-center justify-center sm:h-10 sm:w-10 ${className}`}>
       <button
         type="button"
         onClick={() => (isExpanded ? closeSearch() : openSearch())}
         aria-label={isExpanded ? "Close search" : "Open search"}
         aria-expanded={isExpanded}
-        className={`flex h-10 w-10 items-center justify-center rounded-full transition-all duration-300 ${
+        className={`flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 sm:h-10 sm:w-10 ${
           isExpanded
             ? "bg-gradient-to-br from-[#005E91] to-[#0C759A] text-white shadow-[0_6px_16px_rgba(0,94,145,0.28)]"
             : "border border-[#C9E4F2] bg-gradient-to-br from-[#E8F6FB] to-white text-[#005E91] shadow-[0_4px_12px_rgba(0,94,145,0.1)] hover:border-[#15AEE5]/60 hover:from-[#005E91] hover:to-[#0C759A] hover:text-white hover:shadow-[0_6px_16px_rgba(0,94,145,0.22)]"
@@ -164,7 +161,7 @@ const SiteSearch = ({ onNavigate, className = "", variant = "inline" }) => {
 
       {/* Opens BELOW icon — never covers nav menus */}
       {isExpanded && (
-        <div className="absolute right-0 top-[calc(100%+0.6rem)] z-[10050] w-[min(22rem,90vw)]">
+        <div className="fixed inset-x-3 top-[calc(2.25rem+4.65rem)] z-[10050] sm:inset-x-auto sm:right-4 sm:w-[min(22rem,calc(100vw-2rem))] xl:absolute xl:right-0 xl:top-[calc(100%+0.6rem)] xl:w-[min(22rem,90vw)]">
           <div className="overflow-hidden rounded-2xl border border-[#E2EEF5] bg-white shadow-[0_18px_50px_rgba(15,23,42,0.16)]">
             <div className="flex items-center gap-2 border-b border-[#Eef5f9] px-3 py-2.5">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#005E91] to-[#0C759A] text-white">
@@ -176,6 +173,7 @@ const SiteSearch = ({ onNavigate, className = "", variant = "inline" }) => {
                 value={query}
                 onChange={(event) => {
                   setQuery(event.target.value);
+                  setActiveIndex(0);
                   setIsOpen(true);
                 }}
                 onFocus={() => setIsOpen(true)}
