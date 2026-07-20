@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { ArrowRight, CalendarDays, Filter, Search } from "lucide-react";
 import {
   blogs,
@@ -9,7 +9,8 @@ import {
 } from "../../data/blogs";
 
 function BlogSection() {
-  const [category, setCategory] = useState("All");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [category, setCategory] = useState(searchParams.get("category") || "All");
   const [type, setType] = useState("All");
   const [query, setQuery] = useState("");
 
@@ -135,7 +136,17 @@ function BlogSection() {
               </label>
               <select
                 value={category}
-                onChange={(e) => setCategory(e.target.value)}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setCategory(value);
+                  const next = new URLSearchParams(searchParams);
+                  if (value === "All") {
+                    next.delete("category");
+                  } else {
+                    next.set("category", value);
+                  }
+                  setSearchParams(next, { replace: true });
+                }}
                 className="mb-4 h-10 w-full rounded-xl border border-gray-200 bg-gray-50 px-3 text-sm text-gray-700 outline-none transition focus:border-[#005E91] focus:bg-white focus:ring-2 focus:ring-[#15AEE5]/20"
               >
                 {blogCategories.map((item) => (
