@@ -14,7 +14,7 @@ export const navLinks = [
     path: "/services/metabolomics",
     dropdown: [
       {
-        label: "Longevity Panel",
+        label: "Longevity / Aging Panel",
         path: "/services/metabolomics/longevity-panel",
         dropdown: [
           {
