@@ -116,7 +116,7 @@ const PopupForm = ({ isOpen, onClose }) => {
       onClick={handleClose}
     >
       <div
-        className="relative flex w-full max-w-lg max-h-[92vh] flex-col overflow-hidden rounded-2xl bg-white shadow-[0_25px_80px_rgba(0,0,0,0.35)] sm:rounded-3xl"
+        className="relative flex w-full max-w-xl max-h-[92vh] flex-col overflow-hidden rounded-2xl bg-white shadow-[0_25px_80px_rgba(0,0,0,0.35)] sm:rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -149,8 +149,8 @@ const PopupForm = ({ isOpen, onClose }) => {
                   <GiDna1 className="h-3.5 w-3.5 text-[#0ECE91]" />
                   MDRC Genomics
                 </span>
-                <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">
-                  Book Your Genetic Test
+                <h2 className="whitespace-nowrap text-base font-bold text-gray-900 sm:text-xl md:text-2xl">
+                  Book our Genomics and Metabolomics Test
                 </h2>
                 <p className="mt-1 text-sm text-gray-500">
                   Fill in your details and we&apos;ll schedule your appointment.

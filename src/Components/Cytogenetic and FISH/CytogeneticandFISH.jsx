@@ -16,7 +16,7 @@ const CytogeneticandFISH = () => {
               ← Back to Home
             </button>
 
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
               Cytogenetic and FISH
             </h1>
           </div>

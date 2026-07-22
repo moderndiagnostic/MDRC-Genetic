@@ -23,15 +23,15 @@ const NeuroMetabolicPanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Neuro-Metabolic & <br className="hidden sm:block" />{" "}
-                Inflammatory Panel
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">Neuro-Metabolic &</span>
+              <span className="block">Inflammatory Panel</span>
+            </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 A precision metabolomic panel measuring the neurotransmitters and
                 pathway markers that drive neuroinflammation and cognitive vitality.
-              </p>
+              </h3>
             </div>
 
             {/* Right Image */}

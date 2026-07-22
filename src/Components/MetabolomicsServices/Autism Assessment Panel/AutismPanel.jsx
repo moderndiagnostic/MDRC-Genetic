@@ -22,14 +22,14 @@ const AutismPanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Autism Assessment <br className="hidden sm:block" /> Panel
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              Autism Assessment Panel
+            </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 A comprehensive neuro-metabolic, methylation & gut-brain axis panel
                 mapping 35 biomarkers to support autism-related biochemical insights.
-              </p>
+              </h3>
             </div>
 
             {/* Right Image */}

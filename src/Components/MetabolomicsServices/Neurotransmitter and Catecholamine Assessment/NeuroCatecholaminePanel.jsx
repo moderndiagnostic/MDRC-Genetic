@@ -22,15 +22,15 @@ const NeuroCatecholaminePanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Neurotransmitter and <br className="hidden sm:block" />{" "}
-                Catecholamine Assessment
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">Neurotransmitter and</span>
+              <span className="block">Catecholamine Assessment</span>
+            </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 A non-invasive urinary panel measuring your complete catecholamine,
                 neurotransmitter, and kynurenine pathway balance.
-              </p>
+              </h3>
             </div>
 
             {/* Right Image */}

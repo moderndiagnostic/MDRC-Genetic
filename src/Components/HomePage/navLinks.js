@@ -14,7 +14,7 @@ export const navLinks = [
     path: "/services/metabolomics",
     dropdown: [
       {
-        label: "Longevity / Aging Panel",
+        label: "Aging Speed panel For Longevity",
         path: "/services/metabolomics/longevity-panel",
         dropdown: [
           {
@@ -50,7 +50,7 @@ export const navLinks = [
         path: "/service/depression-assessment-panel",
       },
       {
-        label: "Complete Fat and Water-Soluble Vitamin Panel",
+        label: "Water & Fat-Soluble Comprehensive Panel",
         path: "/service/complete-fat-and-water-soluble-vitamin-panel",
       },
       {
@@ -61,7 +61,16 @@ export const navLinks = [
         label: "New Born Screening for Errors of Metabolism",
         path: "/service/new-born-screening-for-errors-of-metabolism",
       },
-      { label: "Confirmation of Errors of Metabolism", path: "#" },
+      {
+        label: "Methylation Status Analysis",
+        path: "/service/methylation-status-analysis",
+      },
+      {
+        label: "Omega-3 : Omega-6 Fatty Acid Ratio",
+        path: "/service/omega-3-omega-6-fatty-acid-ratio",
+      },
+      { label: "NAD+ / NADH Ratio", path: "#" },
+      { label: "GSH / GSSG Ratio", path: "#" },
       {
         label: "Therapeutic Drug Monitoring",
         path: "#",
@@ -80,7 +89,6 @@ export const navLinks = [
           },
         ],
       },
-      { label: "Drugs of Abuse Levels", path: "#" },
     ],
   },
   {

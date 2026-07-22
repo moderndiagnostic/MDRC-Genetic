@@ -16,10 +16,10 @@ const NIPT = () => {
               <p className="text-[#15AEE5] font-medium text-sm sm:text-base mb-2">
                 Advanced Prenatal Genetic Screening for a Healthier Pregnancy
               </p>
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                EVAA™ Non-Invasive <br className="hidden sm:block" /> Prenatal
-                Screening (NIPS)
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">EVAA™ Non-Invasive</span>
+              <span className="block">Prenatal Screening (NIPS)</span>
+            </h1>
             </div>
 
             <div className="relative flex justify-center items-center w-full md:w-auto py-4 sm:py-6">

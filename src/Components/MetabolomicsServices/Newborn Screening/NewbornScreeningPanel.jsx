@@ -23,15 +23,15 @@ const NewbornScreeningPanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                New Born Screening for <br className="hidden sm:block" />{" "}
-                Errors of Metabolism
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">New Born Screening for</span>
+              <span className="block">Errors of Metabolism</span>
+            </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 A dried blood spot MS/MS panel screening amino acids and acylcarnitines
                 to detect inborn errors of metabolism before symptoms appear.
-              </p>
+              </h3>
             </div>
 
             <div className="relative flex justify-center items-center w-full md:w-auto py-1 sm:py-3 md:py-8 shrink-0">

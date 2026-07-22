@@ -22,13 +22,13 @@ const MethotrexatePanel = () => {
               >
                 ← Back to Home
               </button>
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Methotrexate
-              </h1>
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              Methotrexate
+            </h1>
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 LC-MS/MS therapeutic drug monitoring that maps your Methotrexate
                 clearance curve for safer oncology and autoimmune protocols.
-              </p>
+              </h3>
             </div>
             <div className="relative flex justify-center items-center w-full md:w-auto py-1 sm:py-3 md:py-8 shrink-0">
               <div className="metab-hero-circle relative w-[160px] h-[160px] sm:w-[220px] sm:h-[220px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px]">

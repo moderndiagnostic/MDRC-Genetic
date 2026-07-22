@@ -21,15 +21,17 @@ const CompleteVitaminPanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Complete Fat and Water-Soluble <br className="hidden sm:block" />{" "}
-                Vitamin Panel
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+                <span className="block md:whitespace-nowrap">
+                  Water & Fat-Soluble
+                </span>
+                <span className="block">Comprehensive Panel</span>
               </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 An advanced blood panel measuring active fat- and water-soluble vitamins
                 that fuel metabolism, immunity, and daily vitality.
-              </p>
+              </h3>
             </div>
 
             <div className="relative flex justify-center items-center w-full md:w-auto py-1 sm:py-3 md:py-8 shrink-0">
@@ -39,7 +41,7 @@ const CompleteVitaminPanel = () => {
                 <div className="relative overflow-hidden rounded-full w-full h-full border-2 md:border-[1px] border-[#000000] shadow-[0_0_16px_6px_rgba(255,255,255,0.28)] md:shadow-[0_0_72px_28px_rgba(255,255,255,0.46)] box-border">
                   <img
                     src={heroImg}
-                    alt="Complete Fat and Water-Soluble Vitamin Panel"
+                    alt="Water & Fat-Soluble Comprehensive Panel"
                     className="w-full h-full rounded-full object-cover object-center"
                   />
                 </div>

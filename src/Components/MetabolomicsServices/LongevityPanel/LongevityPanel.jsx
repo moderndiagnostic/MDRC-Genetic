@@ -14,13 +14,14 @@ const LongevityPanel = () => {
               <p className="text-[#15AEE5] font-medium text-xs sm:text-sm md:text-base mb-2">
                 Metabolomics Services
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Longevity Panel
-              </h1>
-              <p className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg opacity-90 leading-relaxed mx-auto md:mx-0 max-w-xl">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">Aging Speed panel</span>
+              <span className="block">For Longevity</span>
+            </h1>
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 Measure your biological aging speed through four critical metabolic
                 ratios and take control of your health trajectory.
-              </p>
+              </h3>
             </div>
           </div>
         </section>

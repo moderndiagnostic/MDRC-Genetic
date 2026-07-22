@@ -27,9 +27,10 @@ const Tms = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Tandem Mass Spectrometry  <br /> (TMS)
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">Tandem Mass Spectrometry</span>
+              <span className="block">(TMS)</span>
+            </h1>
             </div>
 
             {/* Right Image */}

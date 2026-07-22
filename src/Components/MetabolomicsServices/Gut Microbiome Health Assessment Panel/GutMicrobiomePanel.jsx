@@ -22,14 +22,15 @@ const GutMicrobiomePanel = () => {
                 ← Back to Home
               </button>
 
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Gut Microbiome Health <br className="hidden sm:block" /> Assessment Panel
-              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+              <span className="block">Gut Microbiome Health</span>
+              <span className="block">Assessment Panel</span>
+            </h1>
 
-              <p className="mt-4 text-sm sm:text-base md:text-xl opacity-90 max-w-xl mx-auto md:mx-0">
+              <h3 className="mt-4 text-base sm:text-lg md:text-xl font-normal opacity-90 max-w-xl mx-auto md:mx-0 leading-relaxed">
                 A precision metabolomic panel measuring the gut-derived organic acids that drive
                 systemic inflammation and biological aging.
-              </p>
+              </h3>
             </div>
 
             {/* Right Image */}
