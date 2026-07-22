@@ -150,7 +150,7 @@ const PopupForm = ({ isOpen, onClose }) => {
                   MDRC Genomics
                 </span>
                 <h2 className="whitespace-nowrap text-base font-bold text-gray-900 sm:text-xl md:text-2xl">
-                  Book our Genomics and Metabolomics Test
+                  Book our Genomics & Metabolomics Test
                 </h2>
                 <p className="mt-1 text-sm text-gray-500">
                   Fill in your details and we&apos;ll schedule your appointment.
