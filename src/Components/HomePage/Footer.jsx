@@ -30,6 +30,7 @@ const genomicServices = [
 const otherLinks = [
   { label: "Oncogenetics", to: "/service/oncogeneticsdisorders" },
   { label: "Modern DNA Panels", to: "/services/modern-dna-panels" },
+  { label: "Metabolomics Services", to: "/services/metabolomics" },
   { label: "Tandem Mass Spectrometry", to: "/services/tandem-mass-spectrometry-tms" },
 ];
 
