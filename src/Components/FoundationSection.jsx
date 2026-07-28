@@ -80,7 +80,7 @@ const FoundationSection = () => {
               <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827850/vite-project/xacfm0sqfiqaihvxib37.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
               <div>
                 <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
-                  <Counter end={25} suffix="+" />
+                  <Counter end={30} suffix="+" />
                 </h3>
                 <p className="text-gray-600 text-sm sm:text-base">Labs in India</p>
               </div>
