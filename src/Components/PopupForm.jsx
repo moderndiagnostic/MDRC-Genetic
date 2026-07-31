@@ -252,6 +252,7 @@ const PopupForm = ({ isOpen, onClose }) => {
                     >
                       Terms & Conditions
                     </Link>
+                    .
                   </span>
                 </label>
 
