@@ -2,52 +2,69 @@ import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
+import imgKaryotyping from "../../assets/highend/karyotyping.webp";
+import imgCarrierScreening from "../../assets/highend/carrier-screening.webp";
+import imgNipt from "../../assets/highend/nipt.webp";
+import imgGeneticTesting from "../../assets/highend/genetic-testing.webp";
+import imgGenotyping from "../../assets/highend/genotyping.webp";
+import imgDrugResistance from "../../assets/highend/drug-resistance.webp";
+import imgCytogenetic from "../../assets/highend/cytogenetic.webp";
+import imgMicroarray from "../../assets/highend/microarray.webp";
+
 const cards = [
   {
     title: "KARYOTYPING",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827820/vite-project/qkdwtp5jzkfigoccsbwt.jpg",
+    img: imgKaryotyping,
+    alt: "Chromosome and DNA strand used in karyotyping analysis",
     path: "/service/bloodculturekaryotyping",
     tag: "Chromosomes",
   },
   {
     title: "CARRIER SCREENING",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828008/vite-project/yv8hyanavztk9j6k0snd.svg",
+    img: imgCarrierScreening,
+    alt: "Couple consulting a specialist about genetic carrier screening",
     path: "/services/carrier-screening",
     tag: "Family Planning",
   },
   {
     title: "NIPT",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827820/vite-project/qkdwtp5jzkfigoccsbwt.jpg",
+    img: imgNipt,
+    alt: "Blood sample collected from an expectant mother for non-invasive prenatal testing",
     path: "/reproductive-health-pregnancy/services/nipt",
     tag: "Prenatal",
   },
   {
     title: "GENETIC TESTING",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828008/vite-project/yv8hyanavztk9j6k0snd.svg",
+    img: imgGeneticTesting,
+    alt: "DNA double helix samples in laboratory test tubes",
     path: "/services/modern-dna-panels",
     tag: "DNA Panels",
   },
   {
     title: "GENOTYPING TESTS",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827824/vite-project/b3mwmwygppili0vqesfw.jpg",
+    img: imgGenotyping,
+    alt: "Scientist examining a blood sample for genotyping analysis",
     path: "/services/pharmacogenomics",
     tag: "Precision Med",
   },
   {
     title: "DRUG RESISTANCE TESTING",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827824/vite-project/b3mwmwygppili0vqesfw.jpg",
+    img: imgDrugResistance,
+    alt: "Medication capsules and blood samples used in drug resistance testing",
     path: "/services/pharmacogenomics",
     tag: "Therapeutics",
   },
   {
     title: "CYTOGENETIC TESTS",
-    img: "/assets/highend-cytogenetic.png",
+    img: imgCytogenetic,
+    alt: "DNA helix with chromosomes representing cytogenetic testing",
     path: "/services/cyto-genetic-and-fish",
     tag: "FISH & Karyotype",
   },
   {
     title: "MICROARRAY",
-    img: "/assets/highend-microarray.png",
+    img: imgMicroarray,
+    alt: "Technician holding a chromosomal microarray chip",
     path: "/reproductive-health-pregnancy/services/microarray",
     tag: "CMA",
   },
@@ -73,7 +90,10 @@ const ServiceCard = ({ card }) => {
 
         <img
           src={card.img}
-          alt={card.title}
+          alt={card.alt || card.title}
+          width={640}
+          height={420}
+          decoding="async"
           onLoad={() => setLoaded(true)}
           onError={() => {
             setError(true);
