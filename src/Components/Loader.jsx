@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 
 const STEPS = [
   { p: 18, t: "LOADING 18%", c: 0 },
-  { p: 38, t: "LOADING 38%", c: 1 },
-  { p: 62, t: "LOADING 62%", c: 2 },
-  { p: 84, t: "LOADING 84%", c: 3 },
-  { p: 100, t: "READY 100%", c: 3 },
+  { p: 38, t: "LOADING 38%", c: 0 },
+  { p: 62, t: "LOADING 62%", c: 1 },
+  { p: 84, t: "LOADING 84%", c: 2 },
+  { p: 100, t: "READY 100%", c: 2 },
 ];
 
-const CHIPS = ["SYSTEM", "LABS", "IMAGING", "REPORTS"];
+const CHIPS = ["LABS", "IMAGING", "REPORTS"];
 
 export default function ModernPreloader({ onComplete }) {
   const [progress, setProgress] = useState(0);
