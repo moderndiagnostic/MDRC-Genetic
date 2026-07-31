@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://genomics.mdrcindia.com/sitemap.xml

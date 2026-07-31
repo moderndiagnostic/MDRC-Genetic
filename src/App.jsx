@@ -13,6 +13,7 @@ import InfectiousDisease from "./Components/Infectious Disease/InfectiousDisease
 import CytogeneticandFISH from "./Components/Cytogenetic and FISH/CytogeneticandFISH";
 import RarePanel from "./Components/Rare NGS Panel/RarePanel";
 import ScrollToTop from "./ScrollToTop.jsx";
+import RouteSeo from "./Components/RouteSeo";
 import PageLayout from "./Components/PageLayout";
 import WholeExome from "./Components/Whole Exome and Genome Sequencing/WholeExome";
 import Pharmacogenomics from "./Components/Pharmacogenomics/Pharmacogenomics";
@@ -116,6 +117,7 @@ function App() {
   <BrowserRouter>
 
     <ScrollToTop />
+    <RouteSeo />
 
     <Navbar />
 
