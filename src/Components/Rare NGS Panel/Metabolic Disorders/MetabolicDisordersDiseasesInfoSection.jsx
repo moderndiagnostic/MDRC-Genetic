@@ -83,7 +83,7 @@ Supports long-term management and monitoring to reduce morbidity.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Provides data for genetic counseling and family risk assessment.
+Provides data for family risk assessment and clinical guidance.
 </p>
             </li>
 

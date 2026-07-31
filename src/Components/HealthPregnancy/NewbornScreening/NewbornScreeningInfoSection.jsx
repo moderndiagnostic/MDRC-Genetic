@@ -82,7 +82,7 @@ const NewbornScreeningInfoSection = () => {
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-              Provides critical guidance for ongoing clinical management and family counseling.
+              Provides critical direction for ongoing clinical management and family support.
 
 
               </p>

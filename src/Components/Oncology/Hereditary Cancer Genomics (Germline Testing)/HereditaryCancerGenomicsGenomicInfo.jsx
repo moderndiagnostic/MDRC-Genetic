@@ -54,7 +54,7 @@ const HereditaryCancerGenomicsGenomicInfo = () => {
           <List items={[
             "Comprehensive multi-gene panels",
             "ACMG/AMP-compliant variant classification",
-            "Genetic counseling support",
+            "Expert clinical guidance",
             "Family risk assessment and management guidance "
           ]} />
         </Section>

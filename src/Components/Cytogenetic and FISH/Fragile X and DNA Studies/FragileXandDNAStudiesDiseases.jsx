@@ -25,7 +25,7 @@ const HighResolutionBandingDiseases = () => {
 
           {/* Description */}
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6 mt-3">
-            MDRC offers Fragile X testing and comprehensive DNA-based studies for accurate detection of inherited genetic disorders. Molecular analysis identifies gene mutations and repeat expansions, providing critical information for diagnosis, carrier screening, and genetic counseling.
+            MDRC offers Fragile X testing and comprehensive DNA-based studies for accurate detection of inherited genetic disorders. Molecular analysis identifies gene mutations and repeat expansions, providing critical information for diagnosis, carrier screening, and family risk assessment.
           </p>
 
         </div>

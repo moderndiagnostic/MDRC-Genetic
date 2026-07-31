@@ -1,5 +1,6 @@
 import React from "react";
 
+import tmsInstrument from "../../assets/tms-lcmsms-instrument.webp";
 import TandemMass from "./TandemMass";
 import LCMSSection from "./LCMSSection";
 import TestPanel from "./TestPanel";
@@ -40,8 +41,8 @@ const Tms = () => {
                 <div className="absolute inset-0 rounded-full bg-[#15AEE5]/40 blur-xl md:bg-[#15AEE5]/50 md:blur-[28px] scale-105 pointer-events-none" />
                 <div className="relative overflow-hidden rounded-full w-full h-full border-2 md:border-[1px] border-[#000000] shadow-[0_0_16px_6px_rgba(255,255,255,0.28)] md:shadow-[0_0_72px_28px_rgba(255,255,255,0.46)] box-border">
                   <img
-                    src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828050/vite-project/sg9b6bi3mhospqje1l0s.svg"
-                alt="About"
+                    src={tmsInstrument}
+                    alt="Waters LC-MS/MS (Tandem Mass Spectrometry) system at MDRC India"
                     className="w-full h-full rounded-full object-cover object-center"
                   />
                 </div>

@@ -79,7 +79,7 @@ Supports clinical decision-making and targeted therapeutic planning.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Facilitates genetic counseling for at-risk individuals and families.
+Facilitates genetic risk assessment for at-risk individuals and families.
 </p>
             </li>
 

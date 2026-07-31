@@ -15,7 +15,7 @@ function Nationwide() {
     {
       img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827866/vite-project/jaiu1rf2kikefkj5jysz.svg",
       title: "Patient-Centric Care",
-      desc: "Genetic counseling support, fast turnaround times, and transparent reporting for every patient.",
+      desc: "Expert clinical guidance, fast turnaround times, and transparent reporting for every patient.",
     },
   ];
 

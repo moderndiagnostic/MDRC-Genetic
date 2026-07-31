@@ -27,7 +27,7 @@ Hereditary Cancer Genomics (Germline Testing)
 
         
           <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6 text-center md:text-left">
-Hereditary cancer testing identifies germline pathogenic variants that confer an increased lifetime risk of developing specific cancers. These tests are essential for risk assessment, preventive strategies, and familial counseling.
+Hereditary cancer testing identifies germline pathogenic variants that confer an increased lifetime risk of developing specific cancers. These tests are essential for risk assessment, preventive strategies, and familial guidance.
           </p>
 
           

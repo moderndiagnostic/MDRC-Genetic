@@ -23,7 +23,7 @@ const CarrierScreeningWhyChoose = () => {
 
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-              <p>Expert geneticists providing interpretation and counseling</p>
+              <p>Expert geneticists providing interpretation and guidance</p>
             </li>
 
             <li className="flex items-start gap-3">

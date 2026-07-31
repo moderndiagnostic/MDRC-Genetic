@@ -32,8 +32,8 @@ const SimpleForm = () => {
       
       <div className="bg-white w-full max-w-md rounded-xl p-6 shadow-xl font-roboto">
         
-        <h2 className="text-xl font-semibold text-center text-black">
-          Book Your Genetic Test
+        <h2 className="text-lg font-semibold text-center text-black">
+          Book Your Genetic &amp; Metabolomic Tests
         </h2>
 
         <p className="text-center pb-5 text-sm text-gray-600">

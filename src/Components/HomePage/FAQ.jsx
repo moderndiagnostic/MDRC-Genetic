@@ -25,7 +25,7 @@ const faqs = [
   // {
   //   question: "Does MDRC provide support after testing?",
   //   answer:
-  //     "Yes, MDRC offers expert genetic counseling, detailed clinical reports, and guidance to help clinicians and patients interpret results and make informed healthcare decisions.",
+  //     "Yes, MDRC offers expert clinical guidance, detailed clinical reports, and support to help clinicians and patients interpret results and make informed healthcare decisions.",
   // },
 ];
 

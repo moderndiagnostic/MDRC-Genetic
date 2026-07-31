@@ -77,7 +77,7 @@ Supports risk assessment for inherited conditions and pregnancy management.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Guides clinical decision-making and counseling for expectant parents.
+Guides clinical decision-making for expectant parents.
        </p>
             </li>
 

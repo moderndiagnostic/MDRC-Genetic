@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ShieldCheck, Award, Microscope, Users } from "lucide-react";
 
 /* ===== COUNTER COMPONENT ===== */
 const Counter = ({ end, suffix = "" }) => {
@@ -25,6 +26,36 @@ const Counter = ({ end, suffix = "" }) => {
     </span>
   );
 };
+
+const stats = [
+  {
+    Icon: ShieldCheck,
+    title: "NABH & NABL",
+    label: "Certified Labs",
+    gradient: "linear-gradient(135deg, #005C96, #15AEE5)",
+  },
+  {
+    Icon: Award,
+    count: 40,
+    suffix: "+",
+    label: "Years Of Experience",
+    gradient: "linear-gradient(135deg, #05AF79, #0ECE91)",
+  },
+  {
+    Icon: Microscope,
+    count: 30,
+    suffix: "+",
+    label: "Labs in India",
+    gradient: "linear-gradient(135deg, #1e88c8, #48BEFF)",
+  },
+  {
+    Icon: Users,
+    count: 150,
+    suffix: "K+",
+    label: "Satisfied Customers",
+    gradient: "linear-gradient(135deg, #0083B0, #0ECE91)",
+  },
+];
 
 /* ===== FOUNDATION SECTION ===== */
 const FoundationSection = () => {
@@ -53,49 +84,25 @@ const FoundationSection = () => {
           {/* Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
 
-            {/* Item 1 */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
-              <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827843/vite-project/qaajs5qrdc1cgsnh4lqb.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
-              <div>
-                <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
-                  NABH & NABL
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base">Certified Labs</p>
+            {stats.map(({ Icon, title, count, suffix, label, gradient }) => (
+              <div
+                key={label}
+                className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left"
+              >
+                <span
+                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-sm md:h-14 md:w-14"
+                  style={{ background: gradient }}
+                >
+                  <Icon className="h-6 w-6 md:h-7 md:w-7" strokeWidth={1.75} />
+                </span>
+                <div>
+                  <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
+                    {title ?? <Counter end={count} suffix={suffix} />}
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base">{label}</p>
+                </div>
               </div>
-            </div>
-
-            {/* Item 2 */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
-              <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827846/vite-project/lvwxyse50n74x769qyxv.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
-              <div>
-                <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
-                  <Counter end={40} suffix="+" />
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base">Years Of Experience</p>
-              </div>
-            </div>
-
-            {/* Item 3 */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
-              <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827850/vite-project/xacfm0sqfiqaihvxib37.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
-              <div>
-                <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
-                  <Counter end={30} suffix="+" />
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base">Labs in India</p>
-              </div>
-            </div>
-
-            {/* Item 4 */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-4 text-center md:text-left">
-              <img src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827848/vite-project/ql0shvzjflyue2llzgla.svg" className="w-10 h-10 md:w-12 md:h-12" alt="" />
-              <div>
-                <h3 className="text-[#1e88c8] font-semibold text-base md:text-lg">
-                  <Counter end={150} suffix="K+" />
-                </h3>
-                <p className="text-gray-600 text-sm sm:text-base">Satisfied Customers</p>
-              </div>
-            </div>
+            ))}
 
           </div>
         </div>

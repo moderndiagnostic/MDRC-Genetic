@@ -41,6 +41,10 @@ const geneticTests = [
   "Whole Exome & Genome Sequencing",
   "Modern DNA Panels",
   "Tandem Mass Spectrometry (TMS)",
+  "Aging Speed Panel For Longevity",
+  "Gut Microbiome Health Assessment Panel",
+  "Depression Assessment Panel",
+  "Water & Fat Soluble Comprehensive Panel",
   "Carrier Screening / NIPT",
   "Karyotyping",
   "Other / Not Sure",
@@ -138,7 +142,7 @@ const PopupForm = ({ isOpen, onClose }) => {
                 Request Submitted!
               </h3>
               <p className="max-w-xs text-sm text-gray-500">
-                Thank you! Our genetic counseling team will contact you within
+                Thank you! Our genetics team will contact you within
                 24 hours.
               </p>
             </div>
@@ -217,7 +221,7 @@ const PopupForm = ({ isOpen, onClose }) => {
                     }`}
                   >
                     <option value="" disabled>
-                      Select Genetic Test*
+                      Select Genetic &amp; Metabolomics Test*
                     </option>
                     {geneticTests.map((test) => (
                       <option key={test} value={test}>

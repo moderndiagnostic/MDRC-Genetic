@@ -16,18 +16,6 @@ export const navLinks = [
       {
         label: "Aging Speed panel For Longevity",
         path: "/services/metabolomics/longevity-panel",
-        dropdown: [
-          {
-            label: "Methylation Status Analysis",
-            path: "/service/methylation-status-analysis",
-          },
-          {
-            label: "Omega-3 : Omega-6 Fatty Acid Ratio",
-            path: "/service/omega-3-omega-6-fatty-acid-ratio",
-          },
-          { label: "NAD+ / NADH Ratio", path: "#" },
-          { label: "GSH / GSSG Ratio", path: "#" },
-        ],
       },
       {
         label: "Gut Microbiome Health Assessment Panel",

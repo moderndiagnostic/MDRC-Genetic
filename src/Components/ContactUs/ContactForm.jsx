@@ -9,7 +9,6 @@ import {
   MapPin,
   FlaskConical,
 } from "lucide-react";
-import { GiDna1 } from "react-icons/gi";
 
 const FORM_IMAGE =
   "https://res.cloudinary.com/ddcx08e0s/image/upload/v1782111643/ChatGPT_Image_Jun_22_2026_12_24_57_PM_xtk8ps.png";
@@ -31,6 +30,10 @@ const geneticTests = [
   "Whole Exome & Genome Sequencing",
   "Modern DNA Panels",
   "Tandem Mass Spectrometry (TMS)",
+  "Aging Speed Panel For Longevity",
+  "Gut Microbiome Health Assessment Panel",
+  "Depression Assessment Panel",
+  "Water & Fat Soluble Comprehensive Panel",
   "Carrier Screening / NIPT",
   "Karyotyping",
   "Other / Not Sure",
@@ -77,16 +80,12 @@ const ContactForm = () => {
         <div className="relative h-[220px] w-full shrink-0 overflow-hidden sm:h-[260px] lg:h-auto lg:min-h-[520px] lg:w-[48%]">
           <img
             src={FORM_IMAGE}
-            alt="Genetic counseling at MDRC"
+            alt="Genetic and metabolomic testing at MDRC"
             className="absolute inset-0 h-full w-full object-cover object-[30%_center] lg:object-[25%_center]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#003A5C]/75 via-[#005E91]/20 to-transparent lg:bg-gradient-to-r lg:from-[#003A5C]/30 lg:via-transparent lg:to-transparent" />
           <div className="absolute bottom-4 left-4 right-4 z-10 text-white lg:bottom-6 lg:left-6 lg:max-w-[90%]">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur-sm">
-              <GiDna1 className="text-[#0ECE91]" />
-              Free Counseling
-            </span>
-            <p className="mt-2 text-sm font-semibold leading-snug sm:text-base">
+            <p className="text-sm font-semibold leading-snug sm:text-base">
               Book your genetic test with expert guidance
             </p>
           </div>
@@ -106,8 +105,8 @@ const ContactForm = () => {
           ) : (
             <>
               <div className="mb-5">
-                <h2 className="text-xl font-bold text-[#005C96] sm:text-2xl">
-                  Book Your Genetic Test
+                <h2 className="text-lg font-bold text-[#005C96] sm:text-xl">
+                  Book Your Genetic &amp; Metabolomic Tests
                 </h2>
                 <p className="mt-1 text-sm text-gray-500">
                   Enter your details to schedule your test with a specialist.
@@ -164,7 +163,7 @@ const ContactForm = () => {
                     onChange={updateField("test")}
                     className={`${selectClass} pl-10 pr-10 ${!formData.test ? "text-gray-400" : "text-gray-800"}`}
                   >
-                    <option value="" disabled>Select Genetic Test*</option>
+                    <option value="" disabled>Select Genetic &amp; Metabolomics Test*</option>
                     {geneticTests.map((test) => (
                       <option key={test} value={test}>{test}</option>
                     ))}

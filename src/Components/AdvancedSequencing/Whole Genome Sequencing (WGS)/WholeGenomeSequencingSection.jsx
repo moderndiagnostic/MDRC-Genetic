@@ -158,7 +158,7 @@ Variant interpretation following ACMG/AMP guidelines
     </li>
 
     <li>
-Clinical reporting with genetic counseling recommendations
+Clinical reporting with actionable clinical recommendations
     </li>
 
   </ol>

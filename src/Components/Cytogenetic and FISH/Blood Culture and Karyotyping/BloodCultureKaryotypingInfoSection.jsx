@@ -83,7 +83,7 @@ Supports differential diagnosis and personalized clinical management.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Guides genetic counseling and risk assessment for affected individuals and families.
+Guides genetic risk assessment for affected individuals and families.
 </p>
             </li>
 

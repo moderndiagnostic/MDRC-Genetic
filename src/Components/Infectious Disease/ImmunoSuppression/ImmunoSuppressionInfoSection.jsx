@@ -76,7 +76,7 @@ Provides prognostic insights for long-term clinical management.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-                Guides infection control and patient counseling for immunocompromised individuals.
+                Guides infection control and clinical management for immunocompromised individuals.
 
 </p>
             </li>

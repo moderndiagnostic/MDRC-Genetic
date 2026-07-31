@@ -129,8 +129,8 @@ const quickContacts = [
   {
     icon: FaWhatsapp,
     label: "WhatsApp",
-    value: "+91 9876543210",
-    href: "https://wa.me/919876543210",
+    value: "+91-8586988847",
+    href: "https://wa.me/918586988847",
     color: "text-[#25D366]",
     bg: "bg-[#E8FAF0]",
   },
@@ -265,7 +265,7 @@ function ContactUs() {
               Book Your Appointment
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-sm text-gray-600 sm:text-base">
-              Schedule your genetic test or reach out to our counseling team
+              Schedule your genetic test or reach out to our expert team
             </p>
           </div>
 
@@ -288,7 +288,7 @@ function ContactUs() {
                   </div>
 
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/918586988847"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-3 transition hover:text-[#0ECE91]"
@@ -296,7 +296,7 @@ function ContactUs() {
                     <FaWhatsapp size={18} className="mt-0.5 shrink-0" />
                     <div>
                       <p className="text-xs text-white/60">WhatsApp</p>
-                      <p className="text-sm font-medium">+91 9876543210</p>
+                      <p className="text-sm font-medium">+91-8586988847</p>
                     </div>
                   </a>
 

@@ -57,7 +57,7 @@ const CarrierScreeningInfoSection = () => {
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-               Guides genetic counseling and personalized family planning strategies.
+               Guides personalized family planning strategies.
 
               </p>
             </li>

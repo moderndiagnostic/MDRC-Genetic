@@ -1,5 +1,7 @@
 import React from "react";
 
+import tmsInstrument from "../../assets/tms-lcmsms-instrument.webp";
+
 const Rare = () => {
   return (
     <section className="w-full py-5 bg-[#0C759A] md:bg-white">
@@ -26,9 +28,9 @@ const Rare = () => {
         {/* IMAGE */}
         <div className="w-full md:w-1/2 order-2 md:order-1">
           <img
-            src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827898/vite-project/bzohuwofgpqgchfr1bld.svg"
-            alt="TMS"
-            className="w-full scale-x-[-1]"
+            src={tmsInstrument}
+            alt="Waters LC-MS/MS (Tandem Mass Spectrometry) system at MDRC India"
+            className="w-full max-w-[400px] mx-auto rounded-xl"
           />
         </div>
 

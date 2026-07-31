@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Phone, Mail, MapPin, ShieldCheck, Clock, Send, ChevronRight, ExternalLink } from "lucide-react";
-import { GiDna1 } from "react-icons/gi";
+import { Phone, Mail, MapPin, ShieldCheck, Clock, Send, ChevronRight, ExternalLink, Building2 } from "lucide-react";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -106,25 +105,22 @@ const Footer = () => {
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
             {/* LEFT */}
             <div>
-              <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-medium text-[#0ECE91] backdrop-blur-sm">
-                <GiDna1 className="h-4 w-4" />
-                Free Genetic Counseling
-              </span>
-
-              <h2 className="mb-4 text-[clamp(1.75rem,5vw,3rem)] font-bold leading-tight">
+              <h2 className="mb-4 text-[clamp(1.5rem,4vw,2.5rem)] font-bold leading-tight">
                 Book Your{" "}
-                <span className="text-[#0ECE91]">Genetic Test</span>
+                <span className="text-[#0ECE91]">
+                  Genetic &amp; Metabolomic Tests
+                </span>
               </h2>
 
               <p className="max-w-lg text-base leading-relaxed text-white/85 sm:text-lg">
-                Take the first step towards understanding your genetic health.
-                Our expert counselors will guide you through the process.
+                Take the first step towards understanding your genetic and
+                metabolic health. Our expert team will guide you through the
+                process.
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="mt-8 flex flex-wrap gap-4">
                 {[
-                  { icon: ShieldCheck, label: "Expert Counselors" },
-                  { icon: MapPin, label: "25+ Cities" },
+                  { icon: Building2, label: "30+ Labs" },
                   { icon: Clock, label: "24hr Response" },
                 ].map(({ icon: Icon, label }) => (
                   <div
@@ -142,6 +138,15 @@ const Footer = () => {
 
             {/* FORM */}
             <div className="rounded-2xl border border-white/20 bg-white/10 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-md sm:p-8">
+              <div className="mb-5">
+                <h3 className="text-lg font-semibold text-white sm:text-xl">
+                  Request a Callback
+                </h3>
+                <p className="mt-1 text-sm text-white/70">
+                  Fill in your details below and our team will reach out shortly.
+                </p>
+              </div>
+
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <input
@@ -249,12 +254,16 @@ const Footer = () => {
               <p className="mb-6 max-w-sm text-sm leading-relaxed text-white/65">
                 Modern Diagnostic & Research Centre Limited is one of India&apos;s
                 fastest growing diagnostic chains with{" "}
-                <span className="font-semibold text-[#0ECE91]">1800+</span>{" "}
+                <span className="font-semibold text-[#0ECE91]">2000+</span>{" "}
                 collection points nationwide.
               </p>
 
               <div className="flex flex-wrap gap-2">
-                {["NABH Certified", "NABL Accredited", "ISO Compliant"].map(
+                {[
+                  "NABH Certified",
+                  "NABL Accredited",
+                  "ISO Compliant to ISO 15189 2012 Certified",
+                ].map(
                   (badge) => (
                     <span
                       key={badge}

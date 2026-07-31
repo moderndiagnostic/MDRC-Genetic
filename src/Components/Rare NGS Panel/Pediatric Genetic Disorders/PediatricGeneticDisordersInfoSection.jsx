@@ -86,7 +86,7 @@ Supports long-term management and treatment strategies.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Facilitates family counseling and recurrence risk assessment.
+Facilitates family guidance and recurrence risk assessment.
 </p>
             </li>
 

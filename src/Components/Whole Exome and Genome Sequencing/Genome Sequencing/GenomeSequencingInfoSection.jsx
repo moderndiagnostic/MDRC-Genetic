@@ -82,7 +82,7 @@ Guides personalized treatment strategies and long-term clinical care.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Facilitates genetic counseling, family planning, and recurrence risk assessment.
+Facilitates informed family planning and recurrence risk assessment.
 </p>
             </li>
 

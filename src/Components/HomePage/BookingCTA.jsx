@@ -8,8 +8,8 @@ export default function BookingCTA() {
     <>
       <section className="px-4 py-4 sm:px-6 sm:py-5 md:py-6">
         <div className="mx-auto max-w-[1000px] rounded-2xl bg-[#1DB980] px-4 py-6 text-center shadow-[0_10px_35px_rgba(0,0,0,0.08)] sm:rounded-3xl sm:px-6 sm:py-8 md:px-8 md:py-10 lg:rounded-[40px]">
-          <h2 className="mb-2 text-2xl font-bold leading-tight text-white sm:mb-3 sm:text-3xl md:text-4xl lg:text-[42px]">
-            Book Your Genetic Test
+          <h2 className="mb-2 text-xl font-bold leading-tight text-white sm:mb-3 sm:text-2xl md:text-3xl lg:text-[34px]">
+            Book Your Genetic &amp; Metabolomic Tests
           </h2>
 
           <p className="mx-auto mb-4 max-w-[620px] text-sm sm:text-base md:text-lg leading-relaxed text-white/90 sm:mb-5 md:mb-6">

@@ -38,7 +38,7 @@ const NewbornScreeningWhyChoose = () => {
 
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
-              <p>Patient-centered care with confidential reporting and counseling.
+              <p>Patient-centered care with confidential reporting and expert guidance.
 </p>
             </li>
 

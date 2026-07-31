@@ -25,7 +25,7 @@ const HighResolutionBandingDiseases = () => {
 
           {/* Description */}
           <p className="text-white md:text-gray-600 text-base md:text-lg leading-relaxed mb-6 mt-3">
-            MDRC provides comprehensive genomic testing for pediatric patients to identify the genetic causes of congenital anomalies, developmental delays, and syndromic conditions. Advanced molecular diagnostics enable early and accurate diagnosis, supporting effective clinical management and counseling.
+            MDRC provides comprehensive genomic testing for pediatric patients to identify the genetic causes of congenital anomalies, developmental delays, and syndromic conditions. Advanced molecular diagnostics enable early and accurate diagnosis, supporting effective clinical management and family guidance.
           </p>
 
         </div>

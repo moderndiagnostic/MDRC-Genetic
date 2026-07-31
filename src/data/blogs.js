@@ -308,7 +308,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Because NIPT can be performed as early as the tenth week of pregnancy, expecting parents receive information much sooner than they would with other diagnostic approaches. This early insight allows more time for informed decision-making, additional counseling if needed, and better preparation for the road ahead.",
+        text: "Because NIPT can be performed as early as the tenth week of pregnancy, expecting parents receive information much sooner than they would with other diagnostic approaches. This early insight allows more time for informed decision-making, additional consultation if needed, and better preparation for the road ahead.",
       },
       {
         type: "subheading",
@@ -324,7 +324,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "While NIPT offers considerable clarity, it is important to understand that it is a screening test, not a diagnostic one. A high-risk result does not confirm a chromosomal condition with certainty; it indicates the need for further diagnostic testing to confirm the finding. Additionally, NIPT is most accurate for the conditions it is specifically designed to screen for and may not detect every possible genetic or structural abnormality. Genetic counseling is strongly recommended both before and after testing to help parents fully understand their results and the options available to them.",
+        text: "While NIPT offers considerable clarity, it is important to understand that it is a screening test, not a diagnostic one. A high-risk result does not confirm a chromosomal condition with certainty; it indicates the need for further diagnostic testing to confirm the finding. Additionally, NIPT is most accurate for the conditions it is specifically designed to screen for and may not detect every possible genetic or structural abnormality. A specialist consultation is strongly recommended both before and after testing to help parents fully understand their results and the options available to them.",
       },
       {
         type: "heading",
@@ -336,7 +336,7 @@ export const blogs = [
       },
       {
         type: "disclaimer",
-        text: "This article is intended for general informational purposes only and does not constitute medical advice. Expecting parents should consult a qualified healthcare provider or genetic counselor for guidance specific to their pregnancy.",
+        text: "This article is intended for general informational purposes only and does not constitute medical advice. Expecting parents should consult a qualified healthcare provider for guidance specific to their pregnancy.",
       },
     ],
   },
@@ -390,7 +390,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Even without formal genetic testing, a detailed family health history remains one of the most valuable tools for assessing personal health risk. Patterns such as multiple relatives developing the same condition, or conditions appearing at unusually young ages, can signal an elevated genetic risk worth discussing with a healthcare provider. This information often guides decisions around screening schedules, preventive care, and, when appropriate, referral for genetic counseling.",
+        text: "Even without formal genetic testing, a detailed family health history remains one of the most valuable tools for assessing personal health risk. Patterns such as multiple relatives developing the same condition, or conditions appearing at unusually young ages, can signal an elevated genetic risk worth discussing with a healthcare provider. This information often guides decisions around screening schedules, preventive care, and, when appropriate, referral for specialist genetic evaluation.",
       },
       {
         type: "heading",
@@ -414,11 +414,11 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "So, is it in your genes? For some conditions, the answer is largely yes. For many others, genetics is only part of a much larger story that includes environment, lifestyle, and chance. Understanding your family health history and, where appropriate, pursuing genetic counseling or testing can offer valuable insight into your personal risk profile, empowering more informed decisions about your long-term health.",
+        text: "So, is it in your genes? For some conditions, the answer is largely yes. For many others, genetics is only part of a much larger story that includes environment, lifestyle, and chance. Understanding your family health history and, where appropriate, pursuing genetic evaluation or testing can offer valuable insight into your personal risk profile, empowering more informed decisions about your long-term health.",
       },
       {
         type: "disclaimer",
-        text: "This article is intended for general informational purposes only and does not constitute medical advice. Individuals concerned about hereditary health risks should consult a qualified healthcare provider or genetic counselor.",
+        text: "This article is intended for general informational purposes only and does not constitute medical advice. Individuals concerned about hereditary health risks should consult a qualified healthcare provider.",
       },
     ],
   },

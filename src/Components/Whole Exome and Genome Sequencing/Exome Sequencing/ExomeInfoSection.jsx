@@ -77,7 +77,7 @@ Supports personalized clinical management and therapeutic planning.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Facilitates genetic counseling, family planning, and risk assessment.
+Facilitates informed family planning and risk assessment.
        </p>
             </li>
 

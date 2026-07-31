@@ -78,7 +78,7 @@ Detects subtle chromosomal changes not visible with standard karyotyping.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Guides clinical management, genetic counseling, and recurrence risk assessment.
+Guides clinical management and recurrence risk assessment.
        </p>
             </li>
 

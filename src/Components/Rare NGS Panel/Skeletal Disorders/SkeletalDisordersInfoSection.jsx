@@ -85,7 +85,7 @@ Supports prognosis assessment and anticipatory guidance for families.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Enables genetic counseling and risk evaluation for family members.
+Enables genetic risk evaluation for family members.
 </p>
             </li>
 

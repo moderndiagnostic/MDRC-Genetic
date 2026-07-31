@@ -1,4 +1,12 @@
 import React from "react";
+import { CheckCircle2 } from "lucide-react";
+
+const patientSafetyPoints = [
+  "Maintain accuracy of test results and ensure accurate patient diagnosis",
+  "Manage rapidly evolving changes in laboratory medicine and technology",
+  "Exchange ideas and best practices among peers",
+  "Offer professional development and learning opportunities for laboratory and technical staff.",
+];
 
 const AccreditationSection = () => {
   return (
@@ -24,11 +32,11 @@ const AccreditationSection = () => {
           <div className="pb-10">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               
-              <div className="flex-shrink-0">
+              <div className="flex h-28 w-28 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F8FF] p-4">
                 <img
                   src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827776/vite-project/q4pd8znepjv2gvae6fxv.png"
-                  alt="NABL Logo"
-                  className="w-28 h-28 object-contain mx-auto"
+                  alt="NABL accreditation logo"
+                  className="h-full w-full object-contain"
                 />
               </div>
 
@@ -51,11 +59,11 @@ const AccreditationSection = () => {
           <div >
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
               
-              <div className="flex-shrink-0">
+              <div className="flex h-28 w-28 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E0FFF5] p-4">
                 <img
                   src="https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827777/vite-project/guwq9zgijuv8au9rju4u.png"
-                  alt="NABH Logo"
-                  className="w-28 h-28 object-contain mx-auto"
+                  alt="NABH accreditation logo"
+                  className="h-full w-full object-contain"
                 />
               </div>
 
@@ -89,25 +97,12 @@ const AccreditationSection = () => {
                 </p>
 
                 <ul className="mt-3 space-y-2 text-base text-gray-700 text-left">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500">●</span>
-                    Maintain accuracy of test results and ensure accurate patient diagnosis
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500">●</span>
-                    Manage rapidly evolving changes in laboratory medicine and technology
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500">●</span>
-                    Exchange ideas and best practices among peers
-                  </li>
-
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500">●</span>
-                    Offer professional development and learning opportunities for laboratory and technical staff.
-                  </li>
+                  {patientSafetyPoints.map((point) => (
+                    <li key={point} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#0ECE91]" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

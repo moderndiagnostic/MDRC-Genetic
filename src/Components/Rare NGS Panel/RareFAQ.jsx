@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "How are the results clinically useful?",
     answer:
-      "Results help in confirming diagnosis, guiding treatment decisions, enabling genetic counseling, assessing recurrence risk, and supporting personalized patient management.",
+      "Results help in confirming diagnosis, guiding treatment decisions, enabling informed family guidance, assessing recurrence risk, and supporting personalized patient management.",
   },
 ];
 

@@ -456,7 +456,7 @@ const SupportWidget = () => {
               <div className="sw-divider" />
 
               {/* WhatsApp */}
-              <a href="https://wa.me/911246712000" target="_blank" rel="noopener noreferrer" className="sw-option chat">
+              <a href="https://wa.me/918586988847" target="_blank" rel="noopener noreferrer" className="sw-option chat">
                 <div className="sw-option-left">
                   <div className="sw-icon-circle green">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="#16a34a">

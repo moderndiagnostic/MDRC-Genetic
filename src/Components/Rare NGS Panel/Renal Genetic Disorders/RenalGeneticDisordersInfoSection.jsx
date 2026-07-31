@@ -74,7 +74,7 @@ Supports prognosis assessment and long-term care planning.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Facilitates genetic counseling and risk assessment for family members.
+Facilitates genetic risk assessment for family members.
 </p>
             </li>
 

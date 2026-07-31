@@ -79,7 +79,7 @@ Guides disease management, monitoring, and therapeutic planning.
             <li className="flex items-start gap-3">
               <span className="text-green-500 shrink-0 mt-0.5">•</span>
               <p>
-Supports prognostic assessment and family counseling.
+Supports prognostic assessment and family guidance.
        </p>
             </li>
 
