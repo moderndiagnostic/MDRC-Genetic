@@ -262,7 +262,7 @@ const Footer = () => {
                 {[
                   "NABH Certified",
                   "NABL Accredited",
-                  "ISO Compliant to ISO 15189 2012 Certified",
+                  "ISO 15189 2012 Certified",
                 ].map(
                   (badge) => (
                     <span
