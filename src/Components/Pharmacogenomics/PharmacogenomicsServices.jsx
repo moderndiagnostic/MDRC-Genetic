@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Pill, HeartPulse } from "lucide-react";
 
 const services = [
   {
@@ -15,15 +16,15 @@ const services = [
     path: "/service/statinpharmacogenomics",
   },
   {
-    title: "Warfarin",
-    desc: "Warfarin response is influenced by variants in CYP2C9 and VKORC1 affecting drug metabolism and sensitivity..",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778828067/vite-project/kcnzekzpsppo7tmkdycb.svg",
+    title: "Thiopurine & Methotrexate",
+    desc: "Thiopurine and methotrexate metabolism is influenced by variants in TPMT and MTHFR affecting toxicity risk and dosing..",
+    icon: Pill,
     path: "/service/thiopurine/methotrexate/pharmacogenomics",
   },
   {
-    title: "Statins",
-    desc: "Statin therapy response is associated with genetic variation in SLCO1B1 influencing drug transport and risk of myopathy..",
-    img: "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778827957/vite-project/gjtexmqbtfa4zyxkpujg.svg",
+    title: "Clopidogrel",
+    desc: "Clopidogrel response is influenced by variants in CYP2C19 affecting drug metabolism and cardiovascular risk..",
+    icon: HeartPulse,
     path: "/service/clopidogrel/pharmacogenomics",
   },
 ];
@@ -49,11 +50,15 @@ const GeneticServices = () => {
 
               {/* Image */}
               <div className="w-[56px] h-[56px] sm:min-w-[70px] sm:w-[70px] sm:h-[70px] shrink-0 flex items-center justify-center rounded-lg bg-gradient-to-r from-[#15AEE5] to-[#0C607F]">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-8 h-8 object-contain"
-                />
+                {item.icon ? (
+                  <item.icon className="w-8 h-8 text-white" strokeWidth={1.8} />
+                ) : (
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-8 h-8 object-contain"
+                  />
+                )}
               </div>
 
               {/* Content */}
