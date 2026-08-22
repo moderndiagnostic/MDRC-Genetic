@@ -11,6 +11,7 @@ import {
   FlaskConical,
 } from "lucide-react";
 import { GiDna1 } from "react-icons/gi";
+import { sendBookingEmail } from "../lib/emailjs";
 
 const cityOptions = [
   "Gurgaon",
@@ -65,10 +66,14 @@ const PopupForm = ({ isOpen, onClose }) => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(true);
 
   const handleClose = useCallback(() => {
     setAcceptedTerms(true);
+    setError("");
+    setSending(false);
     onClose();
   }, [onClose]);
 
@@ -98,17 +103,35 @@ const PopupForm = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!acceptedTerms) return;
+    if (!acceptedTerms || sending) return;
 
-    setSubmitted(true);
+    setError("");
+    setSending(true);
 
-    setTimeout(() => {
-      setSubmitted(false);
-      handleClose();
-      setFormData({ name: "", phone: "", city: "", test: "", message: "" });
-    }, 2500);
+    try {
+      await sendBookingEmail({
+        ...formData,
+        source: "Popup Form — Book Genomics & Metabolomics Test",
+      });
+
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        handleClose();
+        setFormData({ name: "", phone: "", city: "", test: "", message: "" });
+      }, 2500);
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setError(
+        err?.text ||
+          err?.message ||
+          "Could not send your request. Please try again or call us."
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   const updateField = (field) => (e) =>
@@ -266,13 +289,19 @@ const PopupForm = ({ isOpen, onClose }) => {
                   </p>
                 )}
 
+                {error && (
+                  <p className="text-xs font-medium text-red-500">{error}</p>
+                )}
+
                 <button
                   type="submit"
-                  disabled={!acceptedTerms}
+                  disabled={!acceptedTerms || sending}
                   className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
                 >
-                  Submit Request
-                  <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  {sending ? "Sending..." : "Submit Request"}
+                  {!sending && (
+                    <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  )}
                 </button>
               </form>
             </div>

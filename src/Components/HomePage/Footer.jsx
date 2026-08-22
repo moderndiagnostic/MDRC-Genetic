@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 const logo = "https://res.cloudinary.com/ddcx08e0s/image/upload/v1778835905/logo1_xkzm1g.svg";
 import SupportWidget from "../SupportWidget";
+import { sendBookingEmail } from "../../lib/emailjs";
 
 const testOptions = [
   "Gurgaon","Delhi","Noida","Lucknow","Bareilly","Varanasi","Panipat",
@@ -80,12 +81,39 @@ const Footer = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: "", phone: "", test: "", message: "" });
+    if (sending) return;
+
+    setError("");
+    setSending(true);
+
+    try {
+      await sendBookingEmail({
+        name: formData.name,
+        phone: formData.phone,
+        city: formData.test,
+        test: "Callback request",
+        message: formData.message,
+        source: "Footer — Request a Callback",
+      });
+
+      setSubmitted(true);
+      setFormData({ name: "", phone: "", test: "", message: "" });
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch (err) {
+      console.error("EmailJS error:", err);
+      setError(
+        err?.text ||
+          err?.message ||
+          "Could not send your request. Please try again."
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -201,11 +229,18 @@ const Footer = () => {
 
                 <button
                   type="submit"
-                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] px-8 py-3.5 font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98]"
+                  disabled={sending}
+                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#05AF79] to-[#0ECE91] px-8 py-3.5 font-semibold text-white shadow-[0_8px_24px_rgba(14,206,145,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,206,145,0.45)] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0"
                 >
-                  Submit Request
-                  <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  {sending ? "Sending..." : "Submit Request"}
+                  {!sending && (
+                    <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
+                  )}
                 </button>
+
+                {error && (
+                  <p className="text-sm font-medium text-red-300">{error}</p>
+                )}
 
                 {submitted && (
                   <p className="flex items-center gap-2 text-sm font-medium text-[#0ECE91]">

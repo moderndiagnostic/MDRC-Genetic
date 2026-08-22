@@ -11,6 +11,7 @@
     "upload-images": "node scripts/upload-images.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.2.2",
     "axios": "^1.14.0",
     "cloudinary": "^2.10.0",
