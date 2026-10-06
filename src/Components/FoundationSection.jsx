@@ -36,14 +36,14 @@ const stats = [
   },
   {
     Icon: Award,
-    count: 40,
+    count: 41,
     suffix: "+",
     label: "Years Of Experience",
     gradient: "linear-gradient(135deg, #05AF79, #0ECE91)",
   },
   {
     Icon: Microscope,
-    count: 30,
+    count: 25,
     suffix: "+",
     label: "Labs in India",
     gradient: "linear-gradient(135deg, #1e88c8, #48BEFF)",

@@ -2,11 +2,15 @@ import React from "react";
 
 const TickerBar = () => {
   const items = [
-    { dot: "green",  text: "Same-day reports available for CBC, Lipid Profile & more", tag: "NEW" },
+    {
+      dot: "green",
+      text: "Same-day reports available for CBC, Lipid Profile & more",
+      tag: "NEW",
+      href: "https://www.mdrcindia.com/premium-health-checkup/",
+    },
     { dot: "yellow", text: "NABL & NABH Accredited Laboratory — Trusted Diagnostics Since 1985" },
     { dot: "cyan",   text: "Home sample collection available across 200+ cities • Book now" },
     { dot: "pink",   text: "Whole Genome Sequencing now at MDRC Genomics Division", tag: "HOT" },
-    { dot: "green",  text: "Flat 20% off on all Genomic Panels this month — Use code: GENE20" },
     { dot: "yellow", text: "Radiology • Pathology • Molecular Diagnostics — All under one roof" },
   ];
 
@@ -104,6 +108,15 @@ const TickerBar = () => {
           border-right: 1px solid rgba(255,255,255,0.15);
           height: 36px;
           font-family: 'DM Sans', sans-serif;
+          text-decoration: none;
+        }
+
+        a.ticker-item {
+          cursor: pointer;
+        }
+
+        a.ticker-item:hover {
+          color: #fff;
         }
 
         .ticker-dot {
@@ -141,19 +154,35 @@ const TickerBar = () => {
         <span className="ticker-live-badge">Live</span>
         <div className="ticker-track-wrap">
           <div className="ticker-track">
-            {allItems.map((item, i) => (
-              <div key={i} className="ticker-item">
-                <span
-                  className={`ticker-dot ${item.dot === "green" ? "green" : ""}`}
-                  style={{
-                    background: dotColors[item.dot]?.bg,
-                    boxShadow: dotColors[item.dot]?.shadow,
-                  }}
-                />
-                {item.text}
-                {item.tag && <span className="ticker-tag">{item.tag}</span>}
-              </div>
-            ))}
+            {allItems.map((item, i) => {
+              const content = (
+                <>
+                  <span
+                    className={`ticker-dot ${item.dot === "green" ? "green" : ""}`}
+                    style={{
+                      background: dotColors[item.dot]?.bg,
+                      boxShadow: dotColors[item.dot]?.shadow,
+                    }}
+                  />
+                  {item.text}
+                  {item.tag && <span className="ticker-tag">{item.tag}</span>}
+                </>
+              );
+
+              return item.href ? (
+                <a
+                  key={i}
+                  href={item.href}
+                  className="ticker-item"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div key={i} className="ticker-item">
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

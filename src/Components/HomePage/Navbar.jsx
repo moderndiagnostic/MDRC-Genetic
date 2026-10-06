@@ -285,7 +285,7 @@ const Navbar = () => {
                   ) : (
                     <>
                       {link.label === "Metabolomics Services" ||
-                      link.label === "Modern DNA Panels" ? (
+                      link.label === "Aging Speed Panel" ? (
                         <Link
                           to={link.path}
                           className="flex items-center gap-1 whitespace-nowrap px-2.5 2xl:px-3 py-2 rounded-lg hover:bg-gray-50 hover:text-[#005E91] transition-colors"
@@ -411,13 +411,25 @@ const Navbar = () => {
                     ) : (
                       <>
                         <div className="flex items-center justify-between gap-1">
-                          <Link
-                            to={link.path}
-                            onClick={() => setIsOpen(false)}
-                            className="min-w-0 flex-1 rounded-lg px-3 py-3 font-medium hover:bg-gray-50"
-                          >
-                            {link.label}
-                          </Link>
+                          {link.path === "#" ? (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setOpenMain(openMain === index ? null : index)
+                              }
+                              className="min-w-0 flex-1 rounded-lg px-3 py-3 text-left font-medium hover:bg-gray-50"
+                            >
+                              {link.label}
+                            </button>
+                          ) : (
+                            <Link
+                              to={link.path}
+                              onClick={() => setIsOpen(false)}
+                              className="min-w-0 flex-1 rounded-lg px-3 py-3 font-medium hover:bg-gray-50"
+                            >
+                              {link.label}
+                            </Link>
+                          )}
 
                           <button
                             type="button"

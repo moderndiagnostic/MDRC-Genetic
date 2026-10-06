@@ -148,7 +148,7 @@ const Footer = () => {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 {[
-                  { icon: Building2, label: "30+ Labs" },
+                  { icon: Building2, label: "25+ Labs" },
                   { icon: Clock, label: "24hr Response" },
                 ].map(({ icon: Icon, label }) => (
                   <div

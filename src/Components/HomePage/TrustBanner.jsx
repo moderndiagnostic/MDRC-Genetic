@@ -2,8 +2,8 @@ import { Shield, Clock, Building2, Users } from "lucide-react";
 
 const stats = [
   { icon: Shield, value: "NABH & NABL", label: "Accredited", color: "text-secondary" },
-  { icon: Clock, value: "40+", label: "Years of Trust", color: "text-secondary" },
-  { icon: Building2, value: "21+", label: "Centers / Labs", color: "text-secondary" },
+  { icon: Clock, value: "41+", label: "Years of Trust", color: "text-secondary" },
+  { icon: Building2, value: "25+", label: "Centers / Labs", color: "text-secondary" },
   { icon: Users, value: "1.5 Cr+", label: "Patients Served", color: "text-secondary" },
 ];
 const data = [
@@ -14,12 +14,12 @@ const data = [
     },
     {
       img: "assets/m2.svg",
-      title: "40+",
+      title: "41+",
       desc: "Years Of Experience",
     },
     {
       img: "assets/m5.svg",
-      title: "21+",
+      title: "25+",
       desc: "Labs in India",
     },
     {

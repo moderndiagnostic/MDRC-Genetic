@@ -3,7 +3,7 @@ import { FlaskConical, Globe, MapPinned } from "lucide-react";
 
 const cards = [
   {
-    title: "30+ Labs across 8 States",
+    title: "25+ Labs across 8 States",
     desc: "Haryana, Delhi, Uttar Pradesh, Rajasthan, Punjab, Jammu and Kashmir, West Bengal, Assam, Madhya Pradesh",
     Icon: FlaskConical,
     topBg: "#E6F8FF",

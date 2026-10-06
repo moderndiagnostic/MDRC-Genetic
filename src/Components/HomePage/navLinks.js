@@ -2,25 +2,25 @@ export const navLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
   {
-    label: "Modern DNA Panels",
-    path: "/services/modern-dna-panels",
+    label: "Aging Speed Panel",
+    path: "/services/metabolomics/longevity-panel",
     dropdown: [
-      { label: "Microarray", path: "/services/modern-dna-panels/microarray" },
-      { label: "NGS Panels", path: "/services/modern-dna-panels/ngs-panels" },
+      {
+        label: "Methylation Status Analysis",
+        path: "/service/methylation-status-analysis",
+      },
+      {
+        label: "Omega-3 : Omega-6 Fatty Acid Ratio",
+        path: "/service/omega-3-omega-6-fatty-acid-ratio",
+      },
+      { label: "NAD+ / NADH Ratio", path: "#" },
+      { label: "GSH / GSSG Ratio", path: "#" },
     ],
   },
   {
-    label: "Metabolomics Services",
-    path: "/services/metabolomics",
+    label: "Mental Health",
+    path: "#",
     dropdown: [
-      {
-        label: "Aging Speed panel For Longevity",
-        path: "/services/metabolomics/longevity-panel",
-      },
-      {
-        label: "Gut Microbiome Health Assessment Panel",
-        path: "/service/gut-microbiome-health-assessment-panel",
-      },
       {
         label: "Neurotransmitter and Catecholamine Assessment",
         path: "/service/neurotransmitter-and-catecholamine-assessment",
@@ -30,12 +30,22 @@ export const navLinks = [
         path: "/service/neuro-metabolic-and-inflammatory",
       },
       {
-        label: "Autism Assessment Panel",
-        path: "/service/autism-assessment-panel",
-      },
-      {
         label: "Depression Assessment Panel",
         path: "/service/depression-assessment-panel",
+      },
+    ],
+  },
+  {
+    label: "Metabolomics Services",
+    path: "/services/metabolomics",
+    dropdown: [
+      {
+        label: "Gut Microbiome Health Assessment Panel",
+        path: "/service/gut-microbiome-health-assessment-panel",
+      },
+      {
+        label: "Autism Assessment Panel",
+        path: "/service/autism-assessment-panel",
       },
       {
         label: "Water & Fat-Soluble Comprehensive Panel",
@@ -49,16 +59,6 @@ export const navLinks = [
         label: "New Born Screening for Errors of Metabolism",
         path: "/service/new-born-screening-for-errors-of-metabolism",
       },
-      {
-        label: "Methylation Status Analysis",
-        path: "/service/methylation-status-analysis",
-      },
-      {
-        label: "Omega-3 : Omega-6 Fatty Acid Ratio",
-        path: "/service/omega-3-omega-6-fatty-acid-ratio",
-      },
-      { label: "NAD+ / NADH Ratio", path: "#" },
-      { label: "GSH / GSSG Ratio", path: "#" },
       {
         label: "Therapeutic Drug Monitoring",
         path: "#",
@@ -83,6 +83,14 @@ export const navLinks = [
     label: "Genomic Services",
     path: "/genomic-services",
     dropdown: [
+      {
+        label: "Modern DNA Panels",
+        path: "/services/modern-dna-panels",
+        dropdown: [
+          { label: "Microarray", path: "/services/modern-dna-panels/microarray" },
+          { label: "NGS Panels", path: "/services/modern-dna-panels/ngs-panels" },
+        ],
+      },
       {
         label: "Oncology",
         path: "/services/oncologygenomics",

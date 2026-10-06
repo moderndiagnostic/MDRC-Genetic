@@ -1,3 +1,6 @@
+# MDRC Genomics — https://genomics.mdrcindia.com
+# Allow crawlers to fetch HTML, JavaScript and images. This site renders in the browser.
+
 User-agent: *
 Allow: /
 
